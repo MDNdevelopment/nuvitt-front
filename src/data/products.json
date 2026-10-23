@@ -1,0 +1,2728 @@
+[
+ {
+  "slug": "magnesium-citrate",
+  "image": "magnesium-citrate-e1784744130723.webp",
+  "heroImage": "magnesium-citrate.webp",
+  "labelImage": {
+   "es": "MAGNESIUM-CITRATE-ESPCS.webp",
+   "en": "MAGNESIUM-CITRATE-ESPCS-EN.webp"
+  },
+  "categories": [
+   "balance-renal",
+   "cardiovascular-vitalidad",
+   "movilidad"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 448 512",
+    "d": [
+     "M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M598.88 244.56c25.2-12.6 41.12-38.36 41.12-66.53v-7.64C640 129.3 606.7 96 565.61 96c-32.02 0-60.44 20.49-70.57 50.86-7.68 23.03-11.6 45.14-38.11 45.14H183.06c-27.38 0-31.58-25.54-38.11-45.14C134.83 116.49 106.4 96 74.39 96 33.3 96 0 129.3 0 170.39v7.64c0 28.17 15.92 53.93 41.12 66.53 9.43 4.71 9.43 18.17 0 22.88C15.92 280.04 0 305.8 0 333.97v7.64C0 382.7 33.3 416 74.38 416c32.02 0 60.44-20.49 70.57-50.86 7.68-23.03 11.6-45.14 38.11-45.14h273.87c27.38 0 31.58 25.54 38.11 45.14C505.17 395.51 533.6 416 565.61 416c41.08 0 74.38-33.3 74.38-74.39v-7.64c0-28.18-15.92-53.93-41.12-66.53-9.42-4.71-9.42-18.17.01-22.88z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Magnesium Citrate",
+   "tagline": "Función muscular y descanso",
+   "intro": "El Magnesium Citrate de Nuvitt es magnesio en su forma citrato, altamente absorbible por el organismo. Apoya la función muscular y ayuda a prevenir calambres, contribuye a la salud ósea, reduce la sensación de fatiga y favorece un mejor descanso nocturno. Un aliado simple para sentirte con más vitalidad y dormir mejor.",
+   "specs": [
+    "500 mg",
+    "Sleep & Energy Support",
+    "30 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 1 cápsula al día.",
+   "card": {
+    "badge": "Defensas & inmunidad",
+    "tagline": "Función muscular y descanso",
+    "desc": "Magnesio en su forma citrato, altamente absorbible. Apoya la función muscular, previene calambres, contribuye a la salud ósea y favorece un mejor descanso nocturno.",
+    "spec": "500 mg",
+    "count": "30 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 cápsula",
+     "Porciones por envase: 30"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Citrato de Magnesio"
+      ],
+      "amount": "500 mg",
+      "dv": "*"
+     }
+    ],
+    "footnote": "* Valor Diario (VD) no establecido.",
+    "others": "Otros ingredientes: Hidroxipropilmetilcelulosa (Cápsula Vegetariana HPMC), Celulosa Microcristalina, Estearato de Magnesio y menos del 1% de dióxido de silicio."
+   },
+   "benefits": [
+    {
+     "title": "Alta absorción",
+     "text": "El Magnesium Citrate de Nuvitt es magnesio en su forma citrato, altamente absorbible por el organismo."
+    },
+    {
+     "title": "Función muscular",
+     "text": "Apoya la función muscular y ayuda a prevenir calambres."
+    },
+    {
+     "title": "Salud ósea y energía",
+     "text": "Contribuye a la salud ósea y reduce la sensación de fatiga."
+    },
+    {
+     "title": "Descanso nocturno",
+     "text": "Favorece un mejor descanso nocturno para sentirte con más vitalidad."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Concilia el sueño y combate el insomnio sin dependencia."
+    },
+    {
+     "slug": "potassium-citrate",
+     "desc": "Cuida tus riñones y previene la formación de cálculos."
+    },
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    }
+   ],
+   "seo": {
+    "title": "Citrato de Magnesio 500 mg: Función Muscular | Nuvitt",
+    "description": "Magnesio en forma citrato de alta absorción, 500 mg en 30 cápsulas. Contribuye a la función muscular, la salud ósea y el descanso nocturno."
+   }
+  },
+  "en": {
+   "name": "Magnesium Citrate",
+   "tagline": "Muscle Function and Rest",
+   "intro": "Nuvitt Magnesium Citrate is magnesium in its citrate form, which is highly absorbable by the body. It supports muscle function and helps prevent cramps, contributes to bone health, reduces feelings of fatigue, and promotes a better night’s sleep. A simple ally to help you feel more energetic and sleep better.",
+   "specs": [
+    "500 mg",
+    "Sleep & Energy Support",
+    "30 capsules"
+   ],
+   "dosage": "Recommended serving size: 1 capsule a day.",
+   "card": {
+    "badge": "Defenses & Immunity",
+    "tagline": "Muscle Function and Rest",
+    "desc": "Magnesium in the form of citrate, which is highly absorbable. It supports muscle function, prevents cramps, contributes to bone health, and promotes a better night's sleep.",
+    "spec": "500 mg",
+    "count": "30 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size 1 Capsule",
+     "Serving Per Container 30"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Magnesium Citrate"
+      ],
+      "amount": "500 mg",
+      "dv": "*"
+     }
+    ],
+    "footnote": "* Daily Value (DV) not established.",
+    "others": "Other ingredients: Hydroxypropyl methylcellulose (HPMC vegetarian capsule), microcrystalline cellulose, magnesium stearate, and less than 1% silicon dioxide."
+   },
+   "benefits": [
+    {
+     "title": "High absorption",
+     "text": "Nuvitt Magnesium Citrate is magnesium in the form of citrate, which is highly absorbable by the body."
+    },
+    {
+     "title": "Muscle function",
+     "text": "It supports muscle function and helps prevent cramps."
+    },
+    {
+     "title": "Bone Health and Energy",
+     "text": "It supports bone health and reduces feelings of fatigue."
+    },
+    {
+     "title": "A good night's sleep",
+     "text": "It promotes a better night's sleep so you can feel more energetic."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    },
+    {
+     "slug": "zinc-citrate",
+     "desc": "Boost your immune system and improve your skin's firmness."
+    },
+    {
+     "slug": "artiflex-advantage",
+     "desc": "Protect and restore your joints so you can move without pain."
+    }
+   ],
+   "seo": {
+    "title": "Magnesium Citrate 500 mg: Muscle Function | Nuvitt",
+    "description": "Highly absorbable magnesium citrate, 500 mg in 30 capsules. Supports muscle function, bone health and a better night’s sleep."
+   }
+  }
+ },
+ {
+  "slug": "vitamin-d3-k2",
+  "image": "vitamina-d3.webp",
+  "heroImage": "vitamina-d3.webp",
+  "labelImage": {
+   "es": "VITAMIN-D3-K2-ESPCS.webp",
+   "en": "VITAMIN-D3-K2-EPCS-EN.webp"
+  },
+  "categories": [
+   "inmune",
+   "movilidad"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 448 512",
+    "d": [
+     "M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M598.88 244.56c25.2-12.6 41.12-38.36 41.12-66.53v-7.64C640 129.3 606.7 96 565.61 96c-32.02 0-60.44 20.49-70.57 50.86-7.68 23.03-11.6 45.14-38.11 45.14H183.06c-27.38 0-31.58-25.54-38.11-45.14C134.83 116.49 106.4 96 74.39 96 33.3 96 0 129.3 0 170.39v7.64c0 28.17 15.92 53.93 41.12 66.53 9.43 4.71 9.43 18.17 0 22.88C15.92 280.04 0 305.8 0 333.97v7.64C0 382.7 33.3 416 74.38 416c32.02 0 60.44-20.49 70.57-50.86 7.68-23.03 11.6-45.14 38.11-45.14h273.87c27.38 0 31.58 25.54 38.11 45.14C505.17 395.51 533.6 416 565.61 416c41.08 0 74.38-33.3 74.38-74.39v-7.64c0-28.18-15.92-53.93-41.12-66.53-9.42-4.71-9.42-18.17.01-22.88z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Vitamin D3 + K2",
+   "tagline": "Huesos y corazón",
+   "intro": "Un suplemento sinérgico que cuida tu salud ósea y cardiovascular al mismo tiempo. La Vitamina D3 favorece la absorción del calcio, mientras la K2 contribuye a que se dirija hacia los huesos. Esta combinación apoya la densidad ósea, el funcionamiento normal del sistema inmune y la salud cardiovascular.",
+   "specs": [
+    "D3 5.000 IU + K2 90 mcg",
+    "Bone & Heart Support",
+    "60 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 1 cápsula al día.",
+   "card": {
+    "badge": "Defensas & inmunidad",
+    "tagline": "Huesos y corazón",
+    "desc": "La D3 optimiza la absorción de calcio y la K2 lo dirige a los huesos. Mejora la densidad ósea, fortalece el sistema inmune y previene calcificaciones arteriales.",
+    "spec": "D3 5.000 IU + K2 90 mcg",
+    "count": "60 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 cápsula",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Vitamina D3 (como Colecalciferol)"
+      ],
+      "amount": "125 mcg (5.000 IU)",
+      "dv": "625%"
+     },
+     {
+      "name": [
+       "Vitamina K2 (como Menaquinona-7)"
+      ],
+      "amount": "90 mcg",
+      "dv": "75%"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Cápsula Vegetariana HPMC, Harina de Arroz, Estearato de Magnesio."
+   },
+   "benefits": [
+    {
+     "title": "Salud ósea y cardiovascular",
+     "text": "Un suplemento sinérgico que cuida tu salud ósea y cardiovascular al mismo tiempo."
+    },
+    {
+     "title": "Absorción de calcio",
+     "text": "La Vitamina D3 asegura que el calcio se absorba correctamente."
+    },
+    {
+     "title": "Calcio hacia los huesos",
+     "text": "La K2 favorece que el calcio se dirija hacia los huesos."
+    },
+    {
+     "title": "Densidad ósea e inmunidad",
+     "text": "Apoya la densidad ósea, contribuye al sistema inmune y a la salud cardiovascular."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "magnesium-citrate",
+     "desc": "Alta absorción para relajar músculos y favorecer un mejor descanso."
+    },
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Mejora tu descanso y relaja tus músculos, suave con tu estómago."
+    },
+    {
+     "slug": "probiotic-advantage",
+     "desc": "30 mil millones de CFU para una mejor digestión y defensas más fuertes."
+    }
+   ],
+   "seo": {
+    "title": "Vitamina D3 5000 IU + K2 90 mcg: Huesos | Nuvitt",
+    "description": "La D3 favorece la absorción de calcio y la K2 su fijación en el hueso. 60 cápsulas que apoyan la densidad ósea y la salud cardiovascular."
+   }
+  },
+  "en": {
+   "name": "Vitamin D3 + K2",
+   "tagline": "Bones and Heart",
+   "intro": "A synergistic supplement that supports both your bone and cardiovascular health. Vitamin D3 promotes calcium absorption, while Vitamin K2 helps direct calcium to the bones. This combination supports bone density, normal immune system function, and cardiovascular health.",
+   "specs": [
+    "D3 5,000 IU + K2 90 mcg",
+    "Bone & Heart Support",
+    "60 capsules"
+   ],
+   "dosage": "Recommended serving size: 1 capsule a day.",
+   "card": {
+    "badge": "Defenses & Immunity",
+    "tagline": "Bones and Heart",
+    "desc": "Vitamin D3 optimizes calcium absorption, and vitamin K2 directs it to the bones. It improves bone density, strengthens the immune system, and prevents arterial calcification.",
+    "spec": "D3 5,000 IU + K2 90 mcg",
+    "count": "60 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size 1 Capsule",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Vitamin D3 (as Cholecalciferol)"
+      ],
+      "amount": "125 mcg (5,000 IU)",
+      "dv": "625%"
+     },
+     {
+      "name": [
+       "Vitamin K2 (as Menaquinone-7)"
+      ],
+      "amount": "90 mcg",
+      "dv": "75%"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other Ingredients: Hypromellose Capsule, Rice Flour, Magnesium Stearate."
+   },
+   "benefits": [
+    {
+     "title": "Bone and Cardiovascular Health",
+     "text": "A synergistic supplement that supports both your bone and cardiovascular health at the same time."
+    },
+    {
+     "title": "Calcium Absorption",
+     "text": "Vitamin D3 ensures that calcium is absorbed properly."
+    },
+    {
+     "title": "Calcium for the Bones",
+     "text": "Vitamin K2 helps direct calcium to the bones."
+    },
+    {
+     "title": "Bone Density and Immunity",
+     "text": "It supports bone density and contributes to immune system and cardiovascular health."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Improve your sleep and relax your muscles—it's gentle on your stomach."
+    },
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    },
+    {
+     "slug": "vitamin-c-1000-mg",
+     "desc": "A powerful antioxidant that strengthens your natural defenses."
+    }
+   ],
+   "seo": {
+    "title": "Vitamin D3 5000 IU + K2 90 mcg: Bone Health | Nuvitt",
+    "description": "D3 helps calcium absorption and K2 directs it into the bone. 60 capsules that support bone density and cardiovascular health."
+   }
+  }
+ },
+ {
+  "slug": "omega-3-2000-mg",
+  "image": "omega-3-e1782316123764.webp",
+  "heroImage": "omega-3-e1782316123764.webp",
+  "labelImage": {
+   "es": "OMEGA-3-2000-MG-ESPCS.webp",
+   "en": "OMEGA-3-ESPCS-EN.webp"
+  },
+  "categories": [
+   "cardiovascular-vitalidad"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M288 32C128.94 32 0 160.94 0 320c0 52.8 14.25 102.26 39.06 144.8 5.61 9.62 16.3 15.2 27.44 15.2h443c11.14 0 21.83-5.58 27.44-15.2C561.75 422.26 576 372.8 576 320c0-159.06-128.94-288-288-288zm0 64c14.71 0 26.58 10.13 30.32 23.65-1.11 2.26-2.64 4.23-3.45 6.67l-9.22 27.67c-5.13 3.49-10.97 6.01-17.64 6.01-17.67 0-32-14.33-32-32S270.33 96 288 96zM96 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm48-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm246.77-72.41l-61.33 184C343.13 347.33 352 364.54 352 384c0 11.72-3.38 22.55-8.88 32H232.88c-5.5-9.45-8.88-20.28-8.88-32 0-33.94 26.5-61.43 59.9-63.59l61.34-184.01c4.17-12.56 17.73-19.45 30.36-15.17 12.57 4.19 19.35 17.79 15.17 30.36zm14.66 57.2l15.52-46.55c3.47-1.29 7.13-2.23 11.05-2.23 17.67 0 32 14.33 32 32s-14.33 32-32 32c-11.38-.01-20.89-6.28-26.57-15.22zM480 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M320.2 243.8l-49.7 99.4c-6 12.1-23.4 11.7-28.9-.6l-56.9-126.3-30 71.7H60.6l182.5 186.5c7.1 7.3 18.6 7.3 25.7 0L451.4 288H342.3l-22.1-44.2zM473.7 73.9l-2.4-2.5c-51.5-52.6-135.8-52.6-187.4 0L256 100l-27.9-28.5c-51.5-52.7-135.9-52.7-187.4 0l-2.4 2.4C-10.4 123.7-12.5 203 31 256h102.4l35.9-86.2c5.4-12.9 23.6-13.2 29.4-.4l58.2 129.3 49-97.9c5.9-11.8 22.7-11.8 28.6 0l27.6 55.2H481c43.5-53 41.4-132.3-7.3-182.1z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Omega 3 2000 mg",
+   "tagline": "Corazón y recuperación",
+   "intro": "Aceite de pescado con EPA y DHA que apoya tu salud cardiovascular. Contribuye a mantener niveles normales de triglicéridos —un tipo de grasa en la sangre— y apoya la salud de las arterias y del sistema circulatorio.",
+   "specs": [
+    "2.000 mg",
+    "Heart & Cardiovascular Support",
+    "60 softgels"
+   ],
+   "dosage": "Porción recomendada: 2 cápsulas al día.",
+   "card": {
+    "badge": "Para deportistas",
+    "tagline": "Corazón y recuperación",
+    "desc": "Aceite de pescado con EPA y DHA que cuida la salud cardiovascular, regula la presión arterial, reduce los triglicéridos y previene la acumulación de placa arterial.",
+    "spec": "2.000 mg",
+    "count": "60 softgels"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 2 softgels",
+     "Porciones por envase: 30"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Calorías"
+      ],
+      "amount": "20",
+      "dv": ""
+     },
+     {
+      "name": [
+       "Grasa Total"
+      ],
+      "amount": "3 g",
+      "dv": "4%"
+     },
+     {
+      "name": [
+       "Grasas Trans"
+      ],
+      "amount": "0 g",
+      "dv": ""
+     },
+     {
+      "name": [
+       "Colesterol"
+      ],
+      "amount": "<3g",
+      "dv": "<4%"
+     },
+     {
+      "name": [
+       "Aceite de Pescado (Fish Oil)"
+      ],
+      "amount": "2.000 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "EPA (Ácido Eicosapentaenoico)"
+      ],
+      "amount": "600 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "DHA (Ácido Docosahexaenoico)"
+      ],
+      "amount": "400 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Gelatina, Glicerina, Agua, Tocoferoles."
+   },
+   "benefits": [
+    {
+     "title": "Salud cardiovascular",
+     "text": "Aceite de pescado con EPA y DHA que cuida tu salud cardiovascular."
+    },
+    {
+     "title": "Presión arterial",
+     "text": "Apoya la salud cardiovascular."
+    },
+    {
+     "title": "Triglicéridos y arritmias",
+     "text": "Contribuye a mantener niveles normales de triglicéridos, un tipo de grasa en la sangre."
+    },
+    {
+     "title": "Placa arterial",
+     "text": "Apoya la salud de las arterias y del sistema circulatorio."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "probiotic-advantage",
+     "desc": "30 mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "artiflex-advantage",
+     "desc": "Protege y restaura tus articulaciones para moverte sin dolor."
+    }
+   ],
+   "seo": {
+    "title": "Omega 3 2000 mg con EPA 600 y DHA 400 | Nuvitt",
+    "description": "Aceite de pescado de 2.000 mg con 600 mg de EPA y 400 mg de DHA en 60 softgels de fácil absorción. Apoya la salud cardiovascular."
+   }
+  },
+  "en": {
+   "name": "Omega 3 2000 mg",
+   "tagline": "Heart and Recovery",
+   "intro": "Fish oil with EPA and DHA that supports your cardiovascular health. It helps maintain normal triglyceride levels—a type of fat in the blood—and supports the health of your arteries and circulatory system.",
+   "specs": [
+    "2,000 mg",
+    "Heart & Cardiovascular Support",
+    "60 softgels"
+   ],
+   "dosage": "Recommended serving size: 2 capsules a day.",
+   "card": {
+    "badge": "For Athletes",
+    "tagline": "Heart and Recovery",
+    "desc": "Fish oil with EPA and DHA that supports cardiovascular health, regulates blood pressure, lowers triglycerides, and prevents the buildup of arterial plaque.",
+    "spec": "2,000 mg",
+    "count": "60 softgels"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 2 softgels",
+     "Serving Per Container 30"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Calories"
+      ],
+      "amount": "20",
+      "dv": ""
+     },
+     {
+      "name": [
+       "Total Fat"
+      ],
+      "amount": "3 g",
+      "dv": "4%"
+     },
+     {
+      "name": [
+       "Trans Fat"
+      ],
+      "amount": "0 g",
+      "dv": ""
+     },
+     {
+      "name": [
+       "Cholesterol"
+      ],
+      "amount": "<3g",
+      "dv": "<4%"
+     },
+     {
+      "name": [
+       "Fish Oil"
+      ],
+      "amount": "2,000 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "EPA (Eicosapentaenoic Acid)"
+      ],
+      "amount": "600 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "DHA (Docosahexaenoic Acid)"
+      ],
+      "amount": "400 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Gelatin, Glycerin, Water, Tocopherols."
+   },
+   "benefits": [
+    {
+     "title": "Cardiovascular Health",
+     "text": "Fish oil with EPA and DHA that supports your cardiovascular health."
+    },
+    {
+     "title": "Blood pressure",
+     "text": "Supports cardiovascular health."
+    },
+    {
+     "title": "Triglycerides and Arrhythmias",
+     "text": "It helps maintain normal levels of triglycerides, a type of fat in the blood."
+    },
+    {
+     "title": "Arterial plaque",
+     "text": "It supports the health of the arteries and the circulatory system."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "zinc-citrate",
+     "desc": "Boost your immune system and improve your skin's firmness."
+    },
+    {
+     "slug": "resveratrol-complex",
+     "desc": "An antioxidant that fights aging and boosts your immune system."
+    },
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    }
+   ],
+   "seo": {
+    "title": "Omega 3 2000 mg with EPA 600 and DHA 400 | Nuvitt",
+    "description": "2,000 mg fish oil with 600 mg EPA and 400 mg DHA in 60 easy-to-absorb softgels. Supports cardiovascular health."
+   }
+  }
+ },
+ {
+  "slug": "vitamin-c-1000-mg",
+  "image": "vitamina-c-e1782315947797.webp",
+  "heroImage": "vitamina-c-e1782315947797.webp",
+  "labelImage": {
+   "es": "VITAMIN-C-1000-MG-ESPCS.webp",
+   "en": "VITAMIN-C-ESPCS-EN.webp"
+  },
+  "categories": [
+   "inmune",
+   "longevidad-piel"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 448 512",
+    "d": [
+     "M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M224,192a16,16,0,1,0,16,16A16,16,0,0,0,224,192ZM466.5,83.68l-192-80A57.4,57.4,0,0,0,256.05,0a57.4,57.4,0,0,0-18.46,3.67l-192,80A47.93,47.93,0,0,0,16,128C16,326.5,130.5,463.72,237.5,508.32a48.09,48.09,0,0,0,36.91,0C360.09,472.61,496,349.3,496,128A48,48,0,0,0,466.5,83.68ZM384,256H371.88c-28.51,0-42.79,34.47-22.63,54.63l8.58,8.57a16,16,0,1,1-22.63,22.63l-8.57-8.58C306.47,313.09,272,327.37,272,355.88V368a16,16,0,0,1-32,0V355.88c0-28.51-34.47-42.79-54.63-22.63l-8.57,8.58a16,16,0,0,1-22.63-22.63l8.58-8.57c20.16-20.16,5.88-54.63-22.63-54.63H128a16,16,0,0,1,0-32h12.12c28.51,0,42.79-34.47,22.63-54.63l-8.58-8.57a16,16,0,0,1,22.63-22.63l8.57,8.58c20.16,20.16,54.63,5.88,54.63-22.63V112a16,16,0,0,1,32,0v12.12c0,28.51,34.47,42.79,54.63,22.63l8.57-8.58a16,16,0,0,1,22.63,22.63l-8.58,8.57C329.09,189.53,343.37,224,371.88,224H384a16,16,0,0,1,0,32Zm-96,0a16,16,0,1,0,16,16A16,16,0,0,0,288,256Z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M208 0c-29.9 0-54.7 20.5-61.8 48.2-.8 0-1.4-.2-2.2-.2-35.3 0-64 28.7-64 64 0 4.8.6 9.5 1.7 14C52.5 138 32 166.6 32 200c0 12.6 3.2 24.3 8.3 34.9C16.3 248.7 0 274.3 0 304c0 33.3 20.4 61.9 49.4 73.9-.9 4.6-1.4 9.3-1.4 14.1 0 39.8 32.2 72 72 72 4.1 0 8.1-.5 12-1.2 9.6 28.5 36.2 49.2 68 49.2 39.8 0 72-32.2 72-72V64c0-35.3-28.7-64-64-64zm368 304c0-29.7-16.3-55.3-40.3-69.1 5.2-10.6 8.3-22.3 8.3-34.9 0-33.4-20.5-62-49.7-74 1-4.5 1.7-9.2 1.7-14 0-35.3-28.7-64-64-64-.8 0-1.5.2-2.2.2C422.7 20.5 397.9 0 368 0c-35.3 0-64 28.6-64 64v376c0 39.8 32.2 72 72 72 31.8 0 58.4-20.7 68-49.2 3.9.7 7.9 1.2 12 1.2 39.8 0 72-32.2 72-72 0-4.8-.5-9.5-1.4-14.1 29-12 49.4-40.6 49.4-73.9z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Vitamin C 1000 mg",
+   "tagline": "Antioxidante",
+   "intro": "Un poderoso antioxidante que ayuda a tu cuerpo a producir colágeno de forma natural, presente en piel, tendones, ligamentos y vasos sanguíneos. Neutraliza los radicales libres, contribuye al funcionamiento normal del sistema inmunitario y apoya la recuperación muscular, la función cognitiva y el bienestar general.",
+   "specs": [
+    "1.000 mg",
+    "Skin & Immune Support",
+    "60 tabletas"
+   ],
+   "dosage": "Porción recomendada: 1 tableta al día.",
+   "card": {
+    "badge": "Defensas & inmunidad",
+    "tagline": "Antioxidante",
+    "desc": "Potente antioxidante que estimula la producción de colágeno, neutraliza radicales libres, favorece la cicatrización y regula el sistema inmunitario previniendo resfriados.",
+    "spec": "1.000 mg",
+    "count": "60 tabletas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 tableta",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Vitamina C (como Ácido Ascórbico)"
+      ],
+      "amount": "1000 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "El %VD se basa en una dieta de 2,000 calorías. Su VD puede ser mayor o menor. † Valor Diario no establecido.",
+    "others": "Otros ingredientes: Celulosa Microcristalina, Ácido Esteárico, Estearato de Magnesio y menos del 2% de sílice."
+   },
+   "benefits": [
+    {
+     "title": "Producción de colágeno",
+     "text": "Ayuda a tu cuerpo a producir colágeno de forma natural para regenerar piel, tendones, ligamentos y vasos sanguíneos."
+    },
+    {
+     "title": "Cicatrización y antioxidante",
+     "text": "Favorece la cicatrización y neutraliza los radicales libres que aceleran el envejecimiento de la piel."
+    },
+    {
+     "title": "Sistema inmunitario",
+     "text": "Contribuye al funcionamiento normal del sistema inmunitario."
+    },
+    {
+     "title": "Ánimo y función cognitiva",
+     "text": "Contribuye a reducir el dolor muscular y a mejorar la función cognitiva y el estado de ánimo."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "resveratrol-complex",
+     "desc": "Antioxidante que combate el envejecimiento y refuerza tus defensas."
+    },
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Concilia el sueño y combate el insomnio sin dependencia."
+    },
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    }
+   ],
+   "seo": {
+    "title": "Vitamina C 1000 mg: Antioxidante y Defensas | Nuvitt",
+    "description": "Vitamina C de 1.000 mg en 60 tabletas. Antioxidante que contribuye a la producción de colágeno y al funcionamiento normal del sistema inmune."
+   }
+  },
+  "en": {
+   "name": "Vitamin C 1000 mg",
+   "tagline": "Antioxidant",
+   "intro": "A powerful antioxidant that helps your body naturally produce collagen, which is found in the skin, tendons, ligaments, and blood vessels. It neutralizes free radicals, contributes to the normal functioning of the immune system, and supports muscle recovery, cognitive function, and overall well-being.",
+   "specs": [
+    "1,000 mg",
+    "Skin & Immune Support",
+    "60 tablets"
+   ],
+   "dosage": "Recommended serving size: 1 tablet a day.",
+   "card": {
+    "badge": "Defenses & Immunity",
+    "tagline": "Antioxidant",
+    "desc": "A powerful antioxidant that stimulates collagen production, neutralizes free radicals, promotes healing, and regulates the immune system to help prevent colds.",
+    "spec": "1,000 mg",
+    "count": "60 tablets"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 1 tablet",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Vitamin C (as Ascorbic Acid)"
+      ],
+      "amount": "1000 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "The %DV is based on a 2,000 calorie diet. DV may be higher or lower. † Daily Value not established.",
+    "others": "Other ingredients: Microcrystalline cellulose, stearic acid, magnesium stearate, and less than 2% silica."
+   },
+   "benefits": [
+    {
+     "title": "Collagen production",
+     "text": "It helps your body produce collagen naturally to regenerate skin, tendons, ligaments, and blood vessels."
+    },
+    {
+     "title": "Wound healing and antioxidant",
+     "text": "It promotes healing and neutralizes free radicals that accelerate skin aging."
+    },
+    {
+     "title": "Immune System",
+     "text": "It contributes to the normal functioning of the immune system."
+    },
+    {
+     "title": "Mood and cognitive function",
+     "text": "It helps reduce muscle pain and improve cognitive function and mood."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Improve your sleep and relax your muscles—it's gentle on your stomach."
+    },
+    {
+     "slug": "resveratrol-complex",
+     "desc": "An antioxidant that fights aging and boosts your immune system."
+    },
+    {
+     "slug": "zinc-citrate",
+     "desc": "Boost your immune system and improve your skin's firmness."
+    }
+   ],
+   "seo": {
+    "title": "Vitamin C 1000 mg: Antioxidant and Immune Support | Nuvitt",
+    "description": "1,000 mg vitamin C in 60 tablets. An antioxidant that supports collagen production and normal immune system function."
+   }
+  }
+ },
+ {
+  "slug": "magnesium-glycinate",
+  "image": "magnesium-glycinate-e1783691294352.webp",
+  "heroImage": "magnesium-glycinate-e1783691294352.webp",
+  "labelImage": {
+   "es": "MAGNESIUM-GLYCINATE-ESPCS.webp",
+   "en": "MAGNESIUM-GLYCINATE-ESPCS-EN.webp"
+  },
+  "categories": [
+   "sueno"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 448 512",
+    "d": [
+     "M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M208 0c-29.9 0-54.7 20.5-61.8 48.2-.8 0-1.4-.2-2.2-.2-35.3 0-64 28.7-64 64 0 4.8.6 9.5 1.7 14C52.5 138 32 166.6 32 200c0 12.6 3.2 24.3 8.3 34.9C16.3 248.7 0 274.3 0 304c0 33.3 20.4 61.9 49.4 73.9-.9 4.6-1.4 9.3-1.4 14.1 0 39.8 32.2 72 72 72 4.1 0 8.1-.5 12-1.2 9.6 28.5 36.2 49.2 68 49.2 39.8 0 72-32.2 72-72V64c0-35.3-28.7-64-64-64zm368 304c0-29.7-16.3-55.3-40.3-69.1 5.2-10.6 8.3-22.3 8.3-34.9 0-33.4-20.5-62-49.7-74 1-4.5 1.7-9.2 1.7-14 0-35.3-28.7-64-64-64-.8 0-1.5.2-2.2.2C422.7 20.5 397.9 0 368 0c-35.3 0-64 28.6-64 64v376c0 39.8 32.2 72 72 72 31.8 0 58.4-20.7 68-49.2 3.9.7 7.9 1.2 12 1.2 39.8 0 72-32.2 72-72 0-4.8-.5-9.5-1.4-14.1 29-12 49.4-40.6 49.4-73.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 416 512",
+    "d": [
+     "M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Magnesium Glycinate",
+   "tagline": "Sueño profundo",
+   "intro": "Magnesio unido a glicina, un aminoácido con efectos relajantes, en una forma de alta biodisponibilidad. Es ideal para mejorar la calidad del sueño, reducir el estrés y aliviar los calambres musculares. Su gran ventaja: es suave con el sistema digestivo y no produce efecto laxante, por lo que puedes tomarlo a diario con tranquilidad.",
+   "specs": [
+    "400 mg",
+    "Sleep & Stress Support",
+    "60 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 4 cápsulas al día.",
+   "card": {
+    "badge": "Descanso & sueño",
+    "tagline": "Sueño profundo",
+    "desc": "Magnesio unido a glicina con efectos relajantes. Mejora la calidad del sueño, reduce el estrés y alivia los calambres musculares. Suave con el sistema digestivo, sin efecto laxante.",
+    "spec": "400 mg",
+    "count": "60 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 4 cápsulas",
+     "Porciones por envase: 15"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Glicinato de Magnesio"
+      ],
+      "amount": "400 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Hidroxipropilmetilcelulosa (Cápsula Vegetariana HPMC), Celulosa Microcristalina, Estearato de Magnesio y menos del 1% de Dióxido de Silicio."
+   },
+   "benefits": [
+    {
+     "title": "Alta biodisponibilidad",
+     "text": "Magnesio unido a glicina, un aminoácido con efectos relajantes, en una forma de alta biodisponibilidad."
+    },
+    {
+     "title": "Calidad del sueño",
+     "text": "Ideal para mejorar la calidad del sueño."
+    },
+    {
+     "title": "Estrés y calambres",
+     "text": "Reduce el estrés y alivia los calambres musculares."
+    },
+    {
+     "title": "Suave con la digestión",
+     "text": "Es suave con el sistema digestivo y no produce efecto laxante, por lo que puedes tomarlo a diario con tranquilidad."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Concilia el sueño y combate el insomnio sin dependencia."
+    },
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "vitamin-d3-k2",
+     "desc": "Huesos fuertes, corazón sano y defensas en equilibrio."
+    }
+   ],
+   "seo": {
+    "title": "Magnesium Glycinate 400 mg: Descanso Muscular | Nuvitt",
+    "description": "Magnesio quelado con glicina, suave con el estómago y sin efecto laxante. 400 mg en 60 cápsulas. Apoya el descanso y la relajación muscular."
+   }
+  },
+  "en": {
+   "name": "Magnesium Glycinate",
+   "tagline": "Deep sleep",
+   "intro": "Magnesium bound to glycine, an amino acid with relaxing effects, in a highly bioavailable form. It’s ideal for improving sleep quality, reducing stress, and relieving muscle cramps. Its main advantage: it’s gentle on the digestive system and doesn’t cause a laxative effect, so you can take it daily with peace of mind.",
+   "specs": [
+    "400 mg",
+    "Sleep & Stress Support",
+    "60 capsules"
+   ],
+   "dosage": "Recommended serving size: 4 capsules a day.",
+   "card": {
+    "badge": "Rest & Sleep",
+    "tagline": "Deep sleep",
+    "desc": "Magnesium bound to glycine with relaxing effects. It improves sleep quality, reduces stress, and relieves muscle cramps. Gentle on the digestive system, with no laxative effect.",
+    "spec": "400 mg",
+    "count": "60 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 4 capsules",
+     "Serving Per Container: 15"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Magnesium Glycinate"
+      ],
+      "amount": "400 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Hydroxypropyl methylcellulose (HPMC vegetarian capsule), microcrystalline cellulose, magnesium stearate, and less than 1% silicon dioxide."
+   },
+   "benefits": [
+    {
+     "title": "High bioavailability",
+     "text": "Magnesium bound to glycine, an amino acid with relaxing effects, in a highly bioavailable form."
+    },
+    {
+     "title": "Sleep quality",
+     "text": "Ideal for improving sleep quality."
+    },
+    {
+     "title": "Stress and Cramps",
+     "text": "It reduces stress and relieves muscle cramps."
+    },
+    {
+     "title": "Gentle on the digestive system",
+     "text": "It's gentle on the digestive system and doesn't have a laxative effect, so you can take it every day without any worries."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "vitamin-c-1000-mg",
+     "desc": "A powerful antioxidant that strengthens your natural defenses."
+    },
+    {
+     "slug": "zinc-citrate",
+     "desc": "Boost your immune system and improve your skin's firmness."
+    },
+    {
+     "slug": "omega-3-2000-mg",
+     "desc": "Take care of your heart and improve your cardiovascular health."
+    }
+   ],
+   "seo": {
+    "title": "Magnesium Glycinate 400 mg: Muscle Relaxation | Nuvitt",
+    "description": "Magnesium chelated with glycine, gentle on the stomach with no laxative effect. 400 mg in 60 capsules. Supports rest and muscle relaxation."
+   }
+  }
+ },
+ {
+  "slug": "vitamin-e-268-mg",
+  "image": "598-x-799.webp",
+  "heroImage": "598-x-799.webp",
+  "labelImage": {
+   "es": "VITAMIN-E-268-MG-ESPCS.webp",
+   "en": "VITAMIN-E-268-MG-ESPCS-EN.webp"
+  },
+  "categories": [
+   "longevidad-piel"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   },
+   {
+    "viewBox": "0 0 448 512",
+    "d": [
+     "M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 352 512",
+    "d": [
+     "M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Vitamin E 180 mg",
+   "tagline": "Piel y antienvejecimiento",
+   "intro": "Conocida como «la vitamina de la juventud», la Vitamina E es la aliada esencial de la piel saludable. Actúa como antioxidante protegiendo las células del daño de los radicales libres, retrasando el envejecimiento prematuro y las líneas de expresión. Mejora la elasticidad y firmeza, apoya la producción de colágeno, favorece la cicatrización y ayuda a mantener la piel hidratada, luminosa y con un aspecto más joven. Su dosis de alta biodisponibilidad de 400 IU se integra perfectamente en las membranas de las células de la piel para protegerte contra el fotoenvejecimiento.",
+   "specs": [
+    "180 mg",
+    "Skin & Antioxidant Support",
+    "60 softgels"
+   ],
+   "dosage": "Porción recomendada: 1 softgel al día.",
+   "card": {
+    "badge": "Defensas & inmunidad",
+    "tagline": "Piel y antienvejecimiento",
+    "desc": "Antioxidante conocida como la vitamina de la juventud. Protege las células del daño oxidativo, mejora la elasticidad y firmeza de la piel, y la mantiene hidratada y luminosa.",
+    "spec": "180 mg (400 IU)",
+    "count": "60 softgels"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 softgel",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Vitamina E (como dl-alfa tocoferil acetato) (400 UI)"
+      ],
+      "amount": "180 mg",
+      "dv": "1200%"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Aceite de Soya, Gelatina, Glicerina, Agua."
+   },
+   "benefits": [
+    {
+     "title": "Antioxidante antienvejecimiento",
+     "text": "Protege las células del daño de los radicales libres y retrasa el envejecimiento prematuro y las líneas de expresión."
+    },
+    {
+     "title": "Elasticidad y colágeno",
+     "text": "Mejora la elasticidad y firmeza de la piel y apoya la producción de colágeno."
+    },
+    {
+     "title": "Piel hidratada y luminosa",
+     "text": "Favorece la cicatrización y ayuda a mantener la piel hidratada, luminosa y con un aspecto más joven."
+    },
+    {
+     "title": "Protección contra fotoenvejecimiento",
+     "text": "Su alta biodisponibilidad se integra en las membranas celulares de la piel para protegerte contra el fotoenvejecimiento."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "resveratrol-complex",
+     "desc": "Antioxidante que combate el envejecimiento y refuerza tus defensas."
+    },
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "magnesium-citrate",
+     "desc": "Alta absorción para relajar músculos y favorecer un mejor descanso."
+    }
+   ],
+   "seo": {
+    "title": "Vitamina E 268 mg (400 IU): Piel y Antioxidante | Nuvitt",
+    "description": "Vitamina E de 268 mg equivalentes a 400 IU en 60 softgels. Antioxidante que contribuye a proteger las células del daño oxidativo."
+   }
+  },
+  "en": {
+   "name": "Vitamin E 180 mg",
+   "tagline": "Skin and Anti-Aging",
+   "intro": "Known as “the vitamin of youth,” Vitamin E is an essential ally for healthy skin. It acts as an antioxidant, protecting cells from free radical damage and delaying premature aging and the appearance of fine lines. It improves elasticity and firmness, supports collagen production, promotes healing, and helps keep the skin hydrated, radiant, and looking younger. Its highly bioavailable 400 IU dose integrates seamlessly into skin cell membranes to protect you against photoaging.",
+   "specs": [
+    "180 mg",
+    "Skin & Antioxidant Support",
+    "60 softgels"
+   ],
+   "dosage": "Recommended serving size: 1 softgel per day.",
+   "card": {
+    "badge": "Defenses & Immunity",
+    "tagline": "Skin and Anti-Aging",
+    "desc": "An antioxidant known as the “vitamin of youth.” It protects cells from oxidative damage, improves the skin's elasticity and firmness, and keeps it hydrated and radiant.",
+    "spec": "180 mg (400 IU)",
+    "count": "60 softgels"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 1 softgel",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Vitamin E (as dl-alpha-tocopheryl acetate) (400 IU)"
+      ],
+      "amount": "180 mg",
+      "dv": "1200%"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Soybean Oil, Gelatin, Glycerin, Water."
+   },
+   "benefits": [
+    {
+     "title": "Anti-aging antioxidant",
+     "text": "It protects cells from free radical damage and slows down premature aging and the appearance of fine lines."
+    },
+    {
+     "title": "Elasticity and Collagen",
+     "text": "It improves skin elasticity and firmness and supports collagen production."
+    },
+    {
+     "title": "Hydrated, radiant skin",
+     "text": "It promotes healing and helps keep the skin hydrated, radiant, and looking younger."
+    },
+    {
+     "title": "Protection against photoaging",
+     "text": "Its high bioavailability allows it to integrate into the skin's cell membranes to protect you against photoaging."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "potassium-citrate",
+     "desc": "Take care of your kidneys and prevent kidney stones from forming."
+    },
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Improve your sleep and relax your muscles—it's gentle on your stomach."
+    },
+    {
+     "slug": "magnesium-citrate",
+     "desc": "High absorbency to relax muscles and promote better rest."
+    }
+   ],
+   "seo": {
+    "title": "Vitamin E 268 mg (400 IU): Skin and Antioxidant | Nuvitt",
+    "description": "268 mg vitamin E, equivalent to 400 IU, in 60 softgels. An antioxidant that helps protect cells from oxidative damage."
+   }
+  }
+ },
+ {
+  "slug": "artiflex-advantage",
+  "image": "artiflex.webp",
+  "heroImage": "artiflex.webp",
+  "labelImage": {
+   "es": "ARTIFLEX-ADVANTAGE-ESPCS.webp",
+   "en": "ARTIFLEX-ADVANTAGE-ESPCS-EN.webp"
+  },
+  "categories": [
+   "movilidad"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M598.88 244.56c25.2-12.6 41.12-38.36 41.12-66.53v-7.64C640 129.3 606.7 96 565.61 96c-32.02 0-60.44 20.49-70.57 50.86-7.68 23.03-11.6 45.14-38.11 45.14H183.06c-27.38 0-31.58-25.54-38.11-45.14C134.83 116.49 106.4 96 74.39 96 33.3 96 0 129.3 0 170.39v7.64c0 28.17 15.92 53.93 41.12 66.53 9.43 4.71 9.43 18.17 0 22.88C15.92 280.04 0 305.8 0 333.97v7.64C0 382.7 33.3 416 74.38 416c32.02 0 60.44-20.49 70.57-50.86 7.68-23.03 11.6-45.14 38.11-45.14h273.87c27.38 0 31.58 25.54 38.11 45.14C505.17 395.51 533.6 416 565.61 416c41.08 0 74.38-33.3 74.38-74.39v-7.64c0-28.18-15.92-53.93-41.12-66.53-9.42-4.71-9.42-18.17.01-22.88z"
+    ]
+   },
+   {
+    "viewBox": "0 0 448 512",
+    "d": [
+     "M437.2 403.5L320 215V64h8c13.3 0 24-10.7 24-24V24c0-13.3-10.7-24-24-24H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h8v151L10.8 403.5C-18.5 450.6 15.3 512 70.9 512h306.2c55.7 0 89.4-61.5 60.1-108.5zM137.9 320l48.2-77.6c3.7-5.2 5.8-11.6 5.8-18.4V64h64v160c0 6.9 2.2 13.2 5.8 18.4l48.2 77.6h-172z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Artiflex Advantage",
+   "tagline": "Articulaciones y movilidad",
+   "intro": "Una fórmula multi-ingrediente diseñada para apoyar tus articulaciones desde adentro. Combina sulfato de glucosamina y MSM con una mezcla de colágeno tipo II, ácido hialurónico, magnesio, calcio, vitamina C y D3 que trabajan en conjunto para apoyar la salud de articulaciones, cartílagos y sistema óseo para favorecer tu movilidad.",
+   "specs": [
+    "8 en 1",
+    "Joint & Bone Support",
+    "60 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 1 cápsula al día.",
+   "card": {
+    "badge": "Para deportistas",
+    "tagline": "Articulaciones y movilidad",
+    "desc": "Fórmula 7 en 1 con glucosamina, MSM, colágeno tipo II, ácido hialurónico, magnesio, calcio y vitaminas. Protege y restaura articulaciones para recuperar movilidad sin dolor.",
+    "spec": "50 mg",
+    "count": "60 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 cápsula",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Vitamina C (como ácido ascórbico)"
+      ],
+      "amount": "50 mg",
+      "dv": "56%"
+     },
+     {
+      "name": [
+       "Vitamina D (como colecalciferol)"
+      ],
+      "amount": "20 mcg",
+      "dv": "100%"
+     },
+     {
+      "name": [
+       "Carbonato de Calcio"
+      ],
+      "amount": "50 mg",
+      "dv": "4%"
+     },
+     {
+      "name": [
+       "Magnesio (como óxido de magnesio)"
+      ],
+      "amount": "50 mg",
+      "dv": "12%"
+     },
+     {
+      "name": [
+       "Sulfato de Glucosamina 2KCl"
+      ],
+      "amount": "200 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Colágeno Tipo II"
+      ],
+      "amount": "50 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Ácido Hialurónico"
+      ],
+      "amount": "50 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "MSM (metilsulfonilmetano)"
+      ],
+      "amount": "50 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Cápsula Vegetariana HPMC, Harina de Arroz, Estearato de Magnesio y menos del 1% de Sílice."
+   },
+   "benefits": [
+    {
+     "title": "Protección articular",
+     "text": "Diseñada para apoyar tus articulaciones desde adentro."
+    },
+    {
+     "title": "Fórmula multi-ingrediente",
+     "text": "Combina sulfato de glucosamina y MSM con colágeno tipo II, ácido hialurónico, magnesio, calcio, vitamina C y D3."
+    },
+    {
+     "title": "Cartílago y sistema óseo",
+     "text": "Trabajan en conjunto para apoyar articulaciones, cartílagos y sistema óseo."
+    },
+    {
+     "title": "Recupera tu movilidad",
+     "text": "Favorece tu movilidad y flexibilidad para que te muevas con libertad."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Mejora tu descanso y relaja tus músculos, suave con tu estómago."
+    },
+    {
+     "slug": "zinc-citrate",
+     "desc": "Fortalece tus defensas y mejora la firmeza de tu piel."
+    },
+    {
+     "slug": "omega-3-2000-mg",
+     "desc": "Cuida tu corazón y mejora tu salud cardiovascular."
+    }
+   ],
+   "seo": {
+    "title": "Artiflex Advantage: Colágeno y Glucosamina | Nuvitt",
+    "description": "Fórmula 7 en 1 con glucosamina, MSM, colágeno tipo II, ácido hialurónico, magnesio y calcio. 60 cápsulas para articulaciones y movilidad."
+   }
+  },
+  "en": {
+   "name": "Artiflex Advantage",
+   "tagline": "Joints and Mobility",
+   "intro": "A multi-ingredient formula designed to support your joints from the inside. It combines glucosamine sulfate and MSM with a blend of type II collagen, hyaluronic acid, magnesium, calcium, and vitamins C and D3, which work together to support the health of your joints, cartilage, and skeletal system to promote your mobility.",
+   "specs": [
+    "8-in-1",
+    "Joint & Bone Support",
+    "60 capsules"
+   ],
+   "dosage": "Recommended serving size: 1 capsule a day.",
+   "card": {
+    "badge": "For Athletes",
+    "tagline": "Joints and Mobility",
+    "desc": "7-in-1 formula with glucosamine, MSM, type II collagen, hyaluronic acid, magnesium, calcium, and vitamins. Protects and restores joints to help you regain pain-free mobility.",
+    "spec": "50 mg",
+    "count": "60 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size 1 Capsule",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Vitamin C (as ascorbic acid)"
+      ],
+      "amount": "50 mg",
+      "dv": "56%"
+     },
+     {
+      "name": [
+       "Vitamin D (as cholecalciferol)"
+      ],
+      "amount": "20 mcg",
+      "dv": "100%"
+     },
+     {
+      "name": [
+       "Calcium Carbonate"
+      ],
+      "amount": "50 mg",
+      "dv": "4%"
+     },
+     {
+      "name": [
+       "Magnesium (as magnesium oxide)"
+      ],
+      "amount": "50 mg",
+      "dv": "12%"
+     },
+     {
+      "name": [
+       "Glucosamine Sulfate 2KCl"
+      ],
+      "amount": "200 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Type II Collagen"
+      ],
+      "amount": "50 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Hyaluronic Acid"
+      ],
+      "amount": "50 mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "MSM (methylsulfonylmethane)"
+      ],
+      "amount": "50 mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: HPMC Vegetarian Capsule, Rice Flour, Magnesium Stearate, and less than 1% Silica."
+   },
+   "benefits": [
+    {
+     "title": "Joint Protection",
+     "text": "Designed to support your joints from the inside."
+    },
+    {
+     "title": "Multi-ingredient formula",
+     "text": "It combines glucosamine sulfate and MSM with type II collagen, hyaluronic acid, magnesium, calcium, and vitamins C and D3."
+    },
+    {
+     "title": "Cartilage and the Skeletal System",
+     "text": "They work together to support the joints, cartilage, and skeletal system."
+    },
+    {
+     "title": "Regain Your Mobility",
+     "text": "It improves your mobility and flexibility so you can move freely."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    },
+    {
+     "slug": "vitamin-d3-k2",
+     "desc": "Strong bones, a healthy heart, and a balanced immune system."
+    },
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Promotes sleep and combats insomnia without causing dependence."
+    }
+   ],
+   "seo": {
+    "title": "Artiflex Advantage: Collagen and Glucosamine | Nuvitt",
+    "description": "Multi-ingredient joint formula with glucosamine, MSM, type II collagen, hyaluronic acid, magnesium and calcium. 60 capsules for joints and mobility."
+   }
+  }
+ },
+ {
+  "slug": "potassium-citrate",
+  "image": "potassium-citrate.webp",
+  "heroImage": "potassium-citrate.webp",
+  "labelImage": {
+   "es": "POTASSIUM-CITRATE-ESPCS.webp",
+   "en": "POTASSIUM-CITRATE-ESPCS-EN.webp"
+  },
+  "categories": [
+   "balance-renal"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 352 512",
+    "d": [
+     "M205.22 22.09c-7.94-28.78-49.44-30.12-58.44 0C100.01 179.85 0 222.72 0 333.91 0 432.35 78.72 512 176 512s176-79.65 176-178.09c0-111.75-99.79-153.34-146.78-311.82zM176 448c-61.75 0-112-50.25-112-112 0-8.84 7.16-16 16-16s16 7.16 16 16c0 44.11 35.89 80 80 80 8.84 0 16 7.16 16 16s-7.16 16-16 16z"
+    ]
+   },
+   {
+    "viewBox": "0 0 480 512",
+    "d": [
+     "M477.7 186.1L309.5 18.3c-3.1-3.1-8.2-3.1-11.3 0l-34 33.9c-3.1 3.1-3.1 8.2 0 11.3l11.2 11.1L33 316.5c-38.8 38.7-45.1 102-9.4 143.5 20.6 24 49.5 36 78.4 35.9 26.4 0 52.8-10 72.9-30.1l246.3-245.7 11.2 11.1c3.1 3.1 8.2 3.1 11.3 0l34-33.9c3.1-3 3.1-8.1 0-11.2zM318 256H161l148-147.7 78.5 78.3L318 256z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   },
+   {
+    "viewBox": "0 0 384 512",
+    "d": [
+     "M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm96 304c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48zm0-192c0 4.4-3.6 8-8 8H104c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h176c4.4 0 8 3.6 8 8v16z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Potassium Citrate",
+   "tagline": "Bienestar renal",
+   "intro": "Sal potásica del ácido cítrico que actúa como alcalinizante urinario: reduce la acidez de la orina y ayuda a prevenir la formación de cálculos renales. Indicado como apoyo en condiciones como acidosis o cálculos renales.",
+   "specs": [
+    "99 mg",
+    "Kidney Health Support",
+    "120 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 1 cápsula al día.",
+   "card": {
+    "badge": "Para deportistas",
+    "tagline": "Bienestar renal",
+    "desc": "Alcalinizante urinario que reduce la acidez de la orina y ayuda a prevenir la formación de cálculos renales. Indicado como apoyo en acidosis o cálculos.",
+    "spec": "99 mg",
+    "count": "120 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 cápsula",
+     "Porciones por envase: 120"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Potasio (de 300mg de Citrato de Potasio)"
+      ],
+      "amount": "99 mg",
+      "dv": "*"
+     }
+    ],
+    "footnote": "* Valor Diario (VD) no establecido.",
+    "others": "Otros ingredientes: Harina de Arroz, Cápsula de Gelatina, Celulosa Microcristalina, Estearato de Magnesio."
+   },
+   "benefits": [
+    {
+     "title": "Alcalinizante urinario",
+     "text": "Actúa como alcalinizante urinario, sal potásica del ácido cítrico."
+    },
+    {
+     "title": "Reduce la acidez",
+     "text": "Reduce la acidez de la orina."
+    },
+    {
+     "title": "Previene cálculos renales",
+     "text": "Ayuda a prevenir la formación de cálculos renales."
+    },
+    {
+     "title": "Apoyo en acidosis",
+     "text": "Indicado como apoyo en condiciones como acidosis o cálculos renales."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "resveratrol-complex",
+     "desc": "Antioxidante que combate el envejecimiento y refuerza tus defensas."
+    },
+    {
+     "slug": "magnesium-citrate",
+     "desc": "Alta absorción para relajar músculos y favorecer un mejor descanso."
+    },
+    {
+     "slug": "zinc-citrate",
+     "desc": "Fortalece tus defensas y mejora la firmeza de tu piel."
+    }
+   ],
+   "seo": {
+    "title": "Citrato de Potasio 99 mg: Bienestar Renal | Nuvitt",
+    "description": "Potasio en forma citrato, 99 mg en 120 cápsulas. Alcalinizante urinario que contribuye a reducir la acidez de la orina en el día a día."
+   }
+  },
+  "en": {
+   "name": "Potassium Citrate",
+   "tagline": "Kidney Health",
+   "intro": "Potassium salt of citric acid that acts as a urinary alkalizer: it reduces the acidity of urine and helps prevent the formation of kidney stones. Recommended as an adjunct treatment for conditions such as acidosis or kidney stones.",
+   "specs": [
+    "99 mg",
+    "Kidney Health Support",
+    "120 capsules"
+   ],
+   "dosage": "Recommended serving size: 1 capsule a day.",
+   "card": {
+    "badge": "For Athletes",
+    "tagline": "Kidney Health",
+    "desc": "A urinary alkalizer that reduces urine acidity and helps prevent the formation of kidney stones. Indicated as an adjunct treatment for acidosis or kidney stones.",
+    "spec": "99 mg",
+    "count": "120 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size 1 Capsule",
+     "Servings per package: 120"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Potassium (from 300 mg of potassium citrate)"
+      ],
+      "amount": "99 mg",
+      "dv": "*"
+     }
+    ],
+    "footnote": "* Daily Value (DV) not established.",
+    "others": "Other ingredients: Rice Flour, Gelatin Capsule, Microcrystalline Cellulose, Magnesium Stearate."
+   },
+   "benefits": [
+    {
+     "title": "Urinary alkalizer",
+     "text": "Acts as a urinary alkalizer; potassium salt of citric acid."
+    },
+    {
+     "title": "Reduces heartburn",
+     "text": "It reduces the acidity of urine."
+    },
+    {
+     "title": "Prevents kidney stones",
+     "text": "It helps prevent the formation of kidney stones."
+    },
+    {
+     "title": "Management of Acidosis",
+     "text": "Indicated as an adjunct treatment for conditions such as acidosis or kidney stones."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "vitamin-d3-k2",
+     "desc": "Strong bones, a healthy heart, and a balanced immune system."
+    },
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Improve your sleep and relax your muscles—it's gentle on your stomach."
+    },
+    {
+     "slug": "artiflex-advantage",
+     "desc": "Protect and restore your joints so you can move without pain."
+    }
+   ],
+   "seo": {
+    "title": "Potassium Citrate 99 mg: Kidney Wellness | Nuvitt",
+    "description": "Potassium citrate, 99 mg in 120 capsules. A urinary alkalinizer that helps reduce urine acidity day to day."
+   }
+  }
+ },
+ {
+  "slug": "melatonin-extra-strength",
+  "image": "melatonin.webp",
+  "heroImage": "melatonin.webp",
+  "labelImage": {
+   "es": "MELATONIN-EXTRA-STRENGTH-ESPCS.webp",
+   "en": "MELATONIN-EXTRA-STRENGTH-ESPCS-EN.webp"
+  },
+  "categories": [
+   "sueno"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M208 0c-29.9 0-54.7 20.5-61.8 48.2-.8 0-1.4-.2-2.2-.2-35.3 0-64 28.7-64 64 0 4.8.6 9.5 1.7 14C52.5 138 32 166.6 32 200c0 12.6 3.2 24.3 8.3 34.9C16.3 248.7 0 274.3 0 304c0 33.3 20.4 61.9 49.4 73.9-.9 4.6-1.4 9.3-1.4 14.1 0 39.8 32.2 72 72 72 4.1 0 8.1-.5 12-1.2 9.6 28.5 36.2 49.2 68 49.2 39.8 0 72-32.2 72-72V64c0-35.3-28.7-64-64-64zm368 304c0-29.7-16.3-55.3-40.3-69.1 5.2-10.6 8.3-22.3 8.3-34.9 0-33.4-20.5-62-49.7-74 1-4.5 1.7-9.2 1.7-14 0-35.3-28.7-64-64-64-.8 0-1.5.2-2.2.2C422.7 20.5 397.9 0 368 0c-35.3 0-64 28.6-64 64v376c0 39.8 32.2 72 72 72 31.8 0 58.4-20.7 68-49.2 3.9.7 7.9 1.2 12 1.2 39.8 0 72-32.2 72-72 0-4.8-.5-9.5-1.4-14.1 29-12 49.4-40.6 49.4-73.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 384 512",
+    "d": [
+     "M360 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24zm-75.078 384H99.08c17.059-46.797 52.096-80 92.92-80 40.821 0 75.862 33.196 92.922 80zm.019-256H99.078C91.988 108.548 88 86.748 88 64h208c0 22.805-3.987 44.587-11.059 64z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Melatonin Extra Strength",
+   "tagline": "Concilia el sueño",
+   "intro": "Hormona natural que regula los ritmos circadianos (sueño-vigilia) en respuesta a la oscuridad. Te ayuda a conciliar el sueño más rápido y es útil para tratar el insomnio, el desfase horario y los trastornos del sueño, todo sin causar dependencia. Su formulación de liberación prolongada acompaña tu descanso durante toda la noche.",
+   "specs": [
+    "10 mg",
+    "Deep Sleep Support",
+    "120 tabletas"
+   ],
+   "dosage": "Porción recomendada: 1 tableta al día.",
+   "card": {
+    "badge": "Descanso & sueño",
+    "tagline": "Concilia el sueño",
+    "desc": "Hormona natural de liberación prolongada que regula el ciclo sueño-vigilia. Ayuda a conciliar el sueño, trata el insomnio y el jet lag, sin causar dependencia.",
+    "spec": "10 mg",
+    "count": "120 tabletas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 tableta",
+     "Porciones por envase: 120"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Melatonina"
+      ],
+      "amount": "10mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Fosfato Dicálcico, Ácido Esteárico, Estearato de Magnesio, Croscarmelosa de Sodio, Celulosa Microcristalina."
+   },
+   "benefits": [
+    {
+     "title": "Ritmo circadiano",
+     "text": "Regula los ritmos circadianos de sueño-vigilia en respuesta a la oscuridad."
+    },
+    {
+     "title": "Concilia el sueño rápido",
+     "text": "Te ayuda a conciliar el sueño más rápido."
+    },
+    {
+     "title": "Insomnio y jet lag",
+     "text": "Es útil para tratar el insomnio, el desfase horario y los trastornos del sueño."
+    },
+    {
+     "title": "Liberación prolongada",
+     "text": "Su formulación de liberación prolongada acompaña tu descanso durante toda la noche."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "probiotic-advantage",
+     "desc": "30 mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "resveratrol-complex",
+     "desc": "Antioxidante que combate el envejecimiento y refuerza tus defensas."
+    },
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    }
+   ],
+   "seo": {
+    "title": "Melatonina 10 mg Extra Strength | Nuvitt",
+    "description": "Melatonina de liberación prolongada, 10 mg en 120 tabletas. Contribuye a regular el ciclo de sueño y vigilia sin generar dependencia."
+   }
+  },
+  "en": {
+   "name": "Melatonin Extra Strength",
+   "tagline": "Promotes sleep",
+   "intro": "A natural hormone that regulates circadian rhythms (sleep-wake cycles) in response to darkness. It helps you fall asleep faster and is useful for treating insomnia, jet lag, and sleep disorders—all without causing dependence. Its extended-release formula supports your rest throughout the night.",
+   "specs": [
+    "10 mg",
+    "Deep Sleep Support",
+    "120 tablets"
+   ],
+   "dosage": "Recommended serving size: 1 tablet a day.",
+   "card": {
+    "badge": "Rest & Sleep",
+    "tagline": "Promotes sleep",
+    "desc": "A natural, extended-release hormone that regulates the sleep-wake cycle. It helps you fall asleep and treats insomnia and jet lag without causing dependence.",
+    "spec": "10 mg",
+    "count": "120 tablets"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 1 tablet",
+     "Servings per package: 120"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Melatonin"
+      ],
+      "amount": "10mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Dicalcium Phosphate, Stearic Acid, Magnesium Stearate, Sodium Croscarmellose, Microcrystalline Cellulose."
+   },
+   "benefits": [
+    {
+     "title": "Circadian rhythm",
+     "text": "It regulates circadian sleep-wake rhythms in response to darkness."
+    },
+    {
+     "title": "Fall Asleep Quickly",
+     "text": "It helps you fall asleep faster."
+    },
+    {
+     "title": "Insomnia and Jet Lag",
+     "text": "It is useful for treating insomnia, jet lag, and sleep disorders."
+    },
+    {
+     "title": "Extended-release",
+     "text": "Its extended-release formula supports your rest throughout the night."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "potassium-citrate",
+     "desc": "Take care of your kidneys and prevent kidney stones from forming."
+    },
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    },
+    {
+     "slug": "omega-3-2000-mg",
+     "desc": "Take care of your heart and improve your cardiovascular health."
+    }
+   ],
+   "seo": {
+    "title": "Melatonin 10 mg Extra Strength | Nuvitt",
+    "description": "Prolonged-release melatonin, 10 mg in 120 tablets. Helps regulate the sleep-wake cycle without creating dependence."
+   }
+  }
+ },
+ {
+  "slug": "resveratrol-complex",
+  "image": "resveratrol-e1782315797965.webp",
+  "heroImage": "resveratrol-e1782315797965.webp",
+  "labelImage": {
+   "es": "Resveratrol-complex-nuvitt.webp",
+   "en": "RESVERATROL-COMPLEX-ESPCS-EN.webp"
+  },
+  "categories": [
+   "longevidad-piel"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   },
+   {
+    "viewBox": "0 0 384 512",
+    "d": [
+     "M360 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24zm-75.078 384H99.08c17.059-46.797 52.096-80 92.92-80 40.821 0 75.862 33.196 92.922 80zm.019-256H99.078C91.988 108.548 88 86.748 88 64h208c0 22.805-3.987 44.587-11.059 64z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M256 336h-.02c0-16.18 1.34-8.73-85.05-181.51-17.65-35.29-68.19-35.36-85.87 0C-2.06 328.75.02 320.33.02 336H0c0 44.18 57.31 80 128 80s128-35.82 128-80zM128 176l72 144H56l72-144zm511.98 160c0-16.18 1.34-8.73-85.05-181.51-17.65-35.29-68.19-35.36-85.87 0-87.12 174.26-85.04 165.84-85.04 181.51H384c0 44.18 57.31 80 128 80s128-35.82 128-80h-.02zM440 320l72-144 72 144H440zm88 128H352V153.25c23.51-10.29 41.16-31.48 46.39-57.25H528c8.84 0 16-7.16 16-16V48c0-8.84-7.16-16-16-16H383.64C369.04 12.68 346.09 0 320 0s-49.04 12.68-63.64 32H112c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h129.61c5.23 25.76 22.87 46.96 46.39 57.25V448H112c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Resveratrol Complex",
+   "tagline": "Envejecimiento saludable",
+   "intro": "Antioxidante que mejora la función vascular, mantiene niveles saludables de colesterol, neutraliza radicales libres y modula las vías inflamatorias del organismo.",
+   "specs": [
+    "500 mg",
+    "Healthy Aging Support",
+    "60 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 1 cápsula al día.",
+   "card": {
+    "badge": "Defensas & inmunidad",
+    "tagline": "Envejecimiento saludable",
+    "desc": "Antioxidante que mejora la función vascular, mantiene niveles saludables de colesterol, neutraliza radicales libres y modula las vías inflamatorias del organismo.",
+    "spec": "500 mg",
+    "count": "60 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 cápsula",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Resveratrol",
+       "(Del knotweed japonés)",
+       "(Polygonum cupsidatum) (raíz)",
+       "(Estandarizado al 50% de Trans-Resveratrol)"
+      ],
+      "amount": "50mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Extracto de hoja de té verde",
+       "(Estandarizado al 98% de Polifenoles, 80% de Catequinas, 50% de EGCG, 1% de Cafeína)"
+      ],
+      "amount": "450mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Cápsula de celulosa vegetal, harina de arroz, estearato de magnesio."
+   },
+   "benefits": [
+    {
+     "title": "Salud cardiovascular",
+     "text": "Mejora la función de los vasos sanguíneos y apoya niveles saludables de colesterol."
+    },
+    {
+     "title": "Poder antioxidante",
+     "text": "Neutraliza los radicales libres y protege tus células del daño oxidativo."
+    },
+    {
+     "title": "Envejecimiento saludable",
+     "text": "Apoya el bienestar celular para un envejecimiento más pleno y saludable."
+    },
+    {
+     "title": "Equilibrio inflamatorio",
+     "text": "Modula las vías inflamatorias y favorece una respuesta inflamatoria saludable."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "probiotic-advantage",
+     "desc": "30 mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "Antioxidante de la juventud: piel firme, hidratada y luminosa."
+    },
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Concilia el sueño y combate el insomnio sin dependencia."
+    }
+   ],
+   "seo": {
+    "title": "Resveratrol Complex 500 mg: Antioxidante | Nuvitt",
+    "description": "Resveratrol de 500 mg en 60 cápsulas. Antioxidante que apoya la función vascular y el envejecimiento saludable. Ve la fórmula completa."
+   }
+  },
+  "en": {
+   "name": "Resveratrol Complex",
+   "tagline": "Healthy Aging",
+   "intro": "An antioxidant that improves vascular function, maintains healthy cholesterol levels, neutralizes free radicals, and modulates the body's inflammatory pathways.",
+   "specs": [
+    "500 mg",
+    "Healthy Aging Support",
+    "60 capsules"
+   ],
+   "dosage": "Recommended serving size: 1 capsule a day.",
+   "card": {
+    "badge": "Defenses & Immunity",
+    "tagline": "Healthy Aging",
+    "desc": "An antioxidant that improves vascular function, maintains healthy cholesterol levels, neutralizes free radicals, and modulates the body's inflammatory pathways.",
+    "spec": "500 mg",
+    "count": "60 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size 1 Capsule",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Resveratrol",
+       "(From Japanese knotweed)",
+       "(Polygonum cupsidatum) (root)",
+       "(Standardized to 50% trans-resveratrol)"
+      ],
+      "amount": "50mg",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Green tea leaf extract",
+       "(Standardized to 98% polyphenols, 80% catechins, 50% EGCG, 1% caffeine)"
+      ],
+      "amount": "450mg",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Vegetable cellulose capsule, rice flour, magnesium stearate."
+   },
+   "benefits": [
+    {
+     "title": "Cardiovascular Health",
+     "text": "It improves blood vessel function and supports healthy cholesterol levels."
+    },
+    {
+     "title": "Antioxidant Power",
+     "text": "It neutralizes free radicals and protects your cells from oxidative damage."
+    },
+    {
+     "title": "Healthy Aging",
+     "text": "Supports cellular well-being for a fuller, healthier aging process."
+    },
+    {
+     "title": "Inflammatory Balance",
+     "text": "It modulates inflammatory pathways and promotes a healthy inflammatory response."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "magnesium-citrate",
+     "desc": "High absorbency to relax muscles and promote better rest."
+    },
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    },
+    {
+     "slug": "magnesium-glycinate",
+     "desc": "Improve your sleep and relax your muscles—it's gentle on your stomach."
+    }
+   ],
+   "seo": {
+    "title": "Resveratrol Complex 500 mg: Antioxidant | Nuvitt",
+    "description": "500 mg resveratrol complex in 60 capsules. An antioxidant that supports vascular function and healthy aging. See the full formula."
+   }
+  }
+ },
+ {
+  "slug": "probiotic-advantage",
+  "image": "PROBIOTIC-ADVANTAGE-e1783705532190.webp",
+  "heroImage": "PROBIOTIC-ADVANTAGE-e1783705532190.webp",
+  "labelImage": {
+   "es": "PROBIOTIC-ADVANTAGE-ESPCS.webp",
+   "en": "PROBIOTIC-ADVANTAGE-ESPCS-EN.webp"
+  },
+  "categories": [
+   "balance-renal",
+   "sueno"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M511,102.93A23.76,23.76,0,0,0,481.47,87l-15.12,4.48a111.85,111.85,0,0,0-48.5-47.42l3.79-14.47a23.74,23.74,0,0,0-46-11.91l-3.76,14.37a111.94,111.94,0,0,0-22.33,1.47,386.74,386.74,0,0,0-44.33,10.41l-4.3-12a23.74,23.74,0,0,0-44.75,15.85l4.3,12.05a383.4,383.4,0,0,0-58.69,31.83l-8-10.63a23.85,23.85,0,0,0-33.24-4.8,23.57,23.57,0,0,0-4.83,33.09l8,10.63a386.14,386.14,0,0,0-46.7,47.44l-11-8a23.68,23.68,0,1,0-28,38.17l11.09,8.06a383.45,383.45,0,0,0-30.92,58.75l-12.93-4.43a23.65,23.65,0,1,0-15.47,44.69l13,4.48a385.81,385.81,0,0,0-9.3,40.53A111.58,111.58,0,0,0,32.44,375L17,379.56a23.64,23.64,0,0,0,13.51,45.31l15-4.44a111.49,111.49,0,0,0,48.53,47.24l-3.85,14.75a23.66,23.66,0,0,0,17,28.83,24.7,24.7,0,0,0,6,.75,23.73,23.73,0,0,0,23-17.7L140,479.67c1.37.05,2.77.35,4.13.35A111.22,111.22,0,0,0,205,461.5l11.45,11.74a23.7,23.7,0,0,0,34.08-32.93l-12.19-12.5a111,111,0,0,0,16.11-41.4,158.69,158.69,0,0,1,5.16-20.71l12,5.64a23.66,23.66,0,1,0,20.19-42.79l-11.72-5.49c.89-1.32,1.59-2.77,2.52-4.06a157.86,157.86,0,0,1,10.46-12.49,159.5,159.5,0,0,1,15.59-15.28,162.18,162.18,0,0,1,13.23-10.4c1.5-1,3.1-1.89,4.63-2.87l5.23,11.8a23.74,23.74,0,0,0,43.48-19.08l-5.36-12.11a158.87,158.87,0,0,1,16.49-4.1,111,111,0,0,0,45-18.54l13.33,12a23.69,23.69,0,1,0,31.88-35l-12.94-11.67A110.83,110.83,0,0,0,479.21,137L495,132.32A23.61,23.61,0,0,0,511,102.93ZM160,368a48,48,0,1,1,48-48A48,48,0,0,1,160,368Zm80-136a24,24,0,1,1,24-24A24,24,0,0,1,240,232Z"
+    ]
+   },
+   {
+    "viewBox": "0 0 416 512",
+    "d": [
+     "M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M159.88,175.82h64v64a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-64h64a16,16,0,0,0,16-16v-64a16,16,0,0,0-16-16h-64v-64a16,16,0,0,0-16-16h-64a16,16,0,0,0-16,16v64h-64a16,16,0,0,0-16,16v64A16,16,0,0,0,159.88,175.82ZM568.07,336.13a39.91,39.91,0,0,0-55.93-8.47L392.47,415.84H271.86a16,16,0,0,1,0-32H350.1c16,0,30.75-10.87,33.37-26.61a32.06,32.06,0,0,0-31.62-37.38h-160a117.7,117.7,0,0,0-74.12,26.25l-46.5,37.74H15.87a16.11,16.11,0,0,0-16,16v96a16.11,16.11,0,0,0,16,16h347a104.8,104.8,0,0,0,61.7-20.27L559.6,392A40,40,0,0,0,568.07,336.13Z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M224,192a16,16,0,1,0,16,16A16,16,0,0,0,224,192ZM466.5,83.68l-192-80A57.4,57.4,0,0,0,256.05,0a57.4,57.4,0,0,0-18.46,3.67l-192,80A47.93,47.93,0,0,0,16,128C16,326.5,130.5,463.72,237.5,508.32a48.09,48.09,0,0,0,36.91,0C360.09,472.61,496,349.3,496,128A48,48,0,0,0,466.5,83.68ZM384,256H371.88c-28.51,0-42.79,34.47-22.63,54.63l8.58,8.57a16,16,0,1,1-22.63,22.63l-8.57-8.58C306.47,313.09,272,327.37,272,355.88V368a16,16,0,0,1-32,0V355.88c0-28.51-34.47-42.79-54.63-22.63l-8.57,8.58a16,16,0,0,1-22.63-22.63l8.58-8.57c20.16-20.16,5.88-54.63-22.63-54.63H128a16,16,0,0,1,0-32h12.12c28.51,0,42.79-34.47,22.63-54.63l-8.58-8.57a16,16,0,0,1,22.63-22.63l8.57,8.58c20.16,20.16,54.63,5.88,54.63-22.63V112a16,16,0,0,1,32,0v12.12c0,28.51,34.47,42.79,54.63,22.63l8.57-8.58a16,16,0,0,1,22.63,22.63l-8.58,8.57C329.09,189.53,343.37,224,371.88,224H384a16,16,0,0,1,0,32Zm-96,0a16,16,0,1,0,16,16A16,16,0,0,0,288,256Z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Probiotic Advantage",
+   "tagline": "Salud intestinal",
+   "intro": "Probiótico de ultra potencia con 30 mil millones de CFU (Lactobacillus Acidophilus + Lactobacillus Rhamnosus) de acción controlada.",
+   "specs": [
+    "30 Billion CFU",
+    "Digestive & Immune Support",
+    "30 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 2 cápsulas al día.",
+   "card": {
+    "badge": "Digestión",
+    "tagline": "Salud intestinal",
+    "desc": "Probiótico de ultra potencia con 30 mil millones de CFU (Lactobacillus Acidophilus + Rhamnosus). Mejora la digestión, la absorción de nutrientes, reduce la diarrea y fortalece el sistema inmunológico.",
+    "spec": "30 Billion CFU",
+    "count": "30 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 2 cápsulas",
+     "Porciones por envase: 15"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Lactobacillus Acidophilus"
+      ],
+      "amount": "15 Billion CFU",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Lactobacillus Rhamnosus"
+      ],
+      "amount": "15 Billion CFU",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Hidroxipropilmetilcelulosa (cápsulas vegetarianas), Celulosa Microcristalina, Estearato de Magnesio, y puede contener menos del 2% de Sílice."
+   },
+   "benefits": [
+    {
+     "title": "Bienestar digestivo",
+     "text": "Brinda bienestar digestivo de forma prolongada."
+    },
+    {
+     "title": "Asimilación de nutrientes",
+     "text": "Mejora la asimilación de los alimentos y la absorción de nutrientes."
+    },
+    {
+     "title": "Equilibrio digestivo",
+     "text": "Reduce el riesgo de diarrea y estreñimiento."
+    },
+    {
+     "title": "Sistema inmunológico",
+     "text": "Fortalece el sistema inmunológico."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "vitamin-d3-k2",
+     "desc": "Huesos fuertes, corazón sano y defensas en equilibrio."
+    },
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Concilia el sueño y combate el insomnio sin dependencia."
+    },
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "Antioxidante de la juventud: piel firme, hidratada y luminosa."
+    }
+   ],
+   "seo": {
+    "title": "Probiotic Advantage: 30 Mil Millones CFU | Nuvitt",
+    "description": "Probiótico de ultra potencia con 30 mil millones de CFU de Lactobacillus acidophilus y rhamnosus. 30 cápsulas para la salud intestinal."
+   }
+  },
+  "en": {
+   "name": "Probiotic Advantage",
+   "tagline": "Gut Health",
+   "intro": "Ultra-potent probiotic with 30 billion CFU (Lactobacillus acidophilus + Lactobacillus rhamnosus) with controlled-release action.",
+   "specs": [
+    "30 Billion CFU",
+    "Digestive & Immune Support",
+    "30 capsules"
+   ],
+   "dosage": "Recommended serving size: 2 capsules a day.",
+   "card": {
+    "badge": "Digestion",
+    "tagline": "Gut Health",
+    "desc": "Ultra-potent probiotic with 30 billion CFU (Lactobacillus acidophilus + rhamnosus). Improves digestion and nutrient absorption, reduces diarrhea, and strengthens the immune system.",
+    "spec": "30 Billion CFU",
+    "count": "30 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 2 capsules",
+     "Serving Per Container: 15"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Lactobacillus Acidophilus"
+      ],
+      "amount": "15 Billion CFU",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Lactobacillus Rhamnosus"
+      ],
+      "amount": "15 Billion CFU",
+      "dv": "†"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Hydroxypropyl methylcellulose (vegetarian capsules), microcrystalline cellulose, magnesium stearate, and may contain less than 2% silica."
+   },
+   "benefits": [
+    {
+     "title": "Digestive Well-Being",
+     "text": "It provides long-lasting digestive health."
+    },
+    {
+     "title": "Nutrient Absorption",
+     "text": "It improves the digestion of food and the absorption of nutrients."
+    },
+    {
+     "title": "Digestive Balance",
+     "text": "It reduces the risk of diarrhea and constipation."
+    },
+    {
+     "title": "Immune System",
+     "text": "It strengthens the immune system."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "omega-3-2000-mg",
+     "desc": "Take care of your heart and improve your cardiovascular health."
+    },
+    {
+     "slug": "magnesium-citrate",
+     "desc": "High absorbency to relax muscles and promote better rest."
+    },
+    {
+     "slug": "potassium-citrate",
+     "desc": "Take care of your kidneys and prevent kidney stones from forming."
+    }
+   ],
+   "seo": {
+    "title": "Probiotic Advantage: 30 Billion CFU | Nuvitt",
+    "description": "Ultra-strength probiotic with 30 billion CFU of Lactobacillus acidophilus and rhamnosus. 30 capsules for gut health."
+   }
+  }
+ },
+ {
+  "slug": "probiotic-acidophilus",
+  "image": "probiotic-acidophilus-nuvitt.webp",
+  "heroImage": "probiotic-acidophilus-nuvitt.webp",
+  "labelImage": {
+   "es": "PROBIOTIC-ACIDOPHILUS-ESPCS.webp",
+   "en": "PROBIOTIC-ACIDOPHILUS-ESPCS-EN.webp"
+  },
+  "categories": [
+   "balance-renal",
+   "sueno"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M272.35,226.4A17.71,17.71,0,0,0,281.46,203l-4-9.08a121.29,121.29,0,0,1,12.36-3.08A83.34,83.34,0,0,0,323.57,177l10,9a17.76,17.76,0,1,0,23.92-26.27l-9.72-8.76a83.12,83.12,0,0,0,11.65-48.18l11.85-3.51a17.73,17.73,0,1,0-10.15-34l-11.34,3.36a84,84,0,0,0-36.38-35.57l2.84-10.85a17.8,17.8,0,0,0-34.47-8.93l-2.82,10.78a83.25,83.25,0,0,0-16.74,1.1C250.83,27,240,30.22,229.1,33.39l-3.38-9.46a17.8,17.8,0,0,0-33.56,11.89l3.49,9.8a286.74,286.74,0,0,0-43.94,23.57l-6.32-8.43a17.9,17.9,0,0,0-24.94-3.6A17.69,17.69,0,0,0,116.84,82l6.45,8.61a286.59,286.59,0,0,0-34.95,35.33l-8.82-6.42a17.84,17.84,0,0,0-24.89,3.86,17.66,17.66,0,0,0,3.88,24.77l8.88,6.47a286.6,286.6,0,0,0-23,43.91l-10.48-3.59a17.73,17.73,0,1,0-11.59,33.52L32.67,232c-2.79,10-5.79,19.84-7.52,30.22a83.16,83.16,0,0,0-.82,19l-11.58,3.43a17.73,17.73,0,1,0,10.13,34l11.27-3.33a83.51,83.51,0,0,0,36.39,35.43l-2.88,11.06a17.81,17.81,0,0,0,34.48,8.92l2.87-11c1,0,2.07.26,3.1.26a83.39,83.39,0,0,0,45.65-13.88l8.59,8.8a17.77,17.77,0,0,0,25.56-24.7l-9.14-9.37a83.41,83.41,0,0,0,12.08-31.05,119.08,119.08,0,0,1,3.87-15.53l9,4.22a17.74,17.74,0,1,0,15.15-32.09l-8.8-4.11c.67-1,1.2-2.08,1.9-3.05a119.89,119.89,0,0,1,7.87-9.41,121.73,121.73,0,0,1,11.65-11.4,119.49,119.49,0,0,1,9.94-7.82c1.12-.77,2.32-1.42,3.47-2.15l3.92,8.85a17.86,17.86,0,0,0,16.32,10.58A18.14,18.14,0,0,0,272.35,226.4ZM128,256a32,32,0,1,1,32-32A32,32,0,0,1,128,256Zm80-96a16,16,0,1,1,16-16A16,16,0,0,1,208,160Zm431.26,45.3a17.79,17.79,0,0,0-17.06-12.69,17.55,17.55,0,0,0-5.08.74l-11.27,3.33a83.61,83.61,0,0,0-36.39-35.43l2.88-11.06a17.81,17.81,0,0,0-34.48-8.91l-2.87,11c-1,0-2.07-.26-3.1-.26a83.32,83.32,0,0,0-45.65,13.89l-8.59-8.81a17.77,17.77,0,0,0-25.56,24.7l9.14,9.37a83.28,83.28,0,0,0-12.08,31.06,119.34,119.34,0,0,1-3.87,15.52l-9-4.22a17.74,17.74,0,1,0-15.15,32.09l8.8,4.11c-.67,1-1.2,2.08-1.89,3.05a117.71,117.71,0,0,1-7.94,9.47,119,119,0,0,1-11.57,11.33,121.59,121.59,0,0,1-10,7.83c-1.12.77-2.32,1.42-3.47,2.15l-3.92-8.85a17.86,17.86,0,0,0-16.32-10.58,18.14,18.14,0,0,0-7.18,1.5A17.71,17.71,0,0,0,358.54,309l4,9.08a118.71,118.71,0,0,1-12.36,3.08,83.34,83.34,0,0,0-33.77,13.9l-10-9a17.77,17.77,0,1,0-23.92,26.28l9.72,8.75a83.12,83.12,0,0,0-11.65,48.18l-11.86,3.51a17.73,17.73,0,1,0,10.16,34l11.34-3.36A84,84,0,0,0,326.61,479l-2.84,10.85a17.8,17.8,0,0,0,34.47,8.93L361.06,488a83.3,83.3,0,0,0,16.74-1.1c11.37-1.89,22.24-5.07,33.1-8.24l3.38,9.46a17.8,17.8,0,0,0,33.56-11.89l-3.49-9.79a287.66,287.66,0,0,0,43.94-23.58l6.32,8.43a17.88,17.88,0,0,0,24.93,3.6A17.67,17.67,0,0,0,523.16,430l-6.45-8.61a287.37,287.37,0,0,0,34.95-35.34l8.82,6.42a17.76,17.76,0,1,0,21-28.63l-8.88-6.46a287.17,287.17,0,0,0,23-43.92l10.48,3.59a17.73,17.73,0,1,0,11.59-33.52L607.33,280c2.79-10,5.79-19.84,7.52-30.21a83.27,83.27,0,0,0,.82-19.05l11.58-3.43A17.7,17.7,0,0,0,639.26,205.3ZM416,416a32,32,0,1,1,32-32A32,32,0,0,1,416,416Z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M480.1 31.9c-55-55.1-164.9-34.5-227.8 28.5-49.3 49.3-55.1 110-28.8 160.4L9 413.2c-11.6 10.5-12.1 28.5-1 39.5L59.3 504c11 11 29.1 10.5 39.5-1.1l192.4-214.4c50.4 26.3 111.1 20.5 160.4-28.8 63-62.9 83.6-172.8 28.5-227.8z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M159.88,175.82h64v64a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-64h64a16,16,0,0,0,16-16v-64a16,16,0,0,0-16-16h-64v-64a16,16,0,0,0-16-16h-64a16,16,0,0,0-16,16v64h-64a16,16,0,0,0-16,16v64A16,16,0,0,0,159.88,175.82ZM568.07,336.13a39.91,39.91,0,0,0-55.93-8.47L392.47,415.84H271.86a16,16,0,0,1,0-32H350.1c16,0,30.75-10.87,33.37-26.61a32.06,32.06,0,0,0-31.62-37.38h-160a117.7,117.7,0,0,0-74.12,26.25l-46.5,37.74H15.87a16.11,16.11,0,0,0-16,16v96a16.11,16.11,0,0,0,16,16h347a104.8,104.8,0,0,0,61.7-20.27L559.6,392A40,40,0,0,0,568.07,336.13Z"
+    ]
+   },
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Probiotic Acidophilus",
+   "tagline": "Salud intestinal",
+   "intro": "Probiótico con mil millones de CFU. Amigable con el estómago y el sistema inmunológico; ayuda a descomponer los alimentos, absorber los nutrientes y combatir organismos dañinos.",
+   "specs": [
+    "1 Billion CFU",
+    "Digestive & Immune Support",
+    "60 cápsulas"
+   ],
+   "dosage": "Porción recomendada: 1 cápsula al día.",
+   "card": {
+    "badge": "Digestión",
+    "tagline": "Salud intestinal",
+    "desc": "Probiótico con mil millones de CFU (blend de Lactobacillus acidophilus, plantarum, rhamnosus, fermentum y reuteri). Amigable con el estómago y el sistema inmunológico; ayuda a descomponer los alimentos, absorber los nutrientes y combatir organismos dañinos.",
+    "spec": "1 Billion CFU",
+    "count": "60 cápsulas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 cápsula",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Mezcla probiótica"
+      ],
+      "amount": "1 Billion CFU",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Lactobacillus acidophilus, Lactobacillus plantarum, Lactobacillus rhamnosus, Lactobacillus fermentum, Lactobacillus reuteri."
+      ],
+      "amount": "",
+      "dv": "",
+      "note": true
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Gelatina (cápsula), harina de arroz blanco, estearato de magnesio."
+   },
+   "benefits": [
+    {
+     "title": "Amigable con el estómago",
+     "text": "Está naturalmente presente en el sistema digestivo humano saludable."
+    },
+    {
+     "title": "Descomposición de alimentos",
+     "text": "Ayuda a descomponer los alimentos."
+    },
+    {
+     "title": "Absorción eficiente",
+     "text": "Ayuda a absorber los nutrientes."
+    },
+    {
+     "title": "Sistema inmunológico",
+     "text": "Ayuda al sistema inmunológico a combatir los organismos dañinos."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "resveratrol-complex",
+     "desc": "Antioxidante que combate el envejecimiento y refuerza tus defensas."
+    },
+    {
+     "slug": "zinc-citrate",
+     "desc": "Fortalece tus defensas y mejora la firmeza de tu piel."
+    },
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Concilia el sueño y combate el insomnio sin dependencia."
+    }
+   ],
+   "seo": {
+    "title": "Probiotic Acidophilus: 5 Cepas Lactobacillus | Nuvitt",
+    "description": "Blend de cinco cepas de Lactobacillus con mil millones de CFU en 60 cápsulas. Apoya la digestión y la absorción diaria de nutrientes."
+   }
+  },
+  "en": {
+   "name": "Probiotic Acidophilus",
+   "tagline": "Gut Health",
+   "intro": "Probiotic with 1 billion CFU. Gentle on the stomach and supportive of the immune system; helps break down food, absorb nutrients, and fight harmful organisms.",
+   "specs": [
+    "1 Billion CFU",
+    "Digestive & Immune Support",
+    "60 capsules"
+   ],
+   "dosage": "Recommended serving size: 1 capsule a day.",
+   "card": {
+    "badge": "Digestion",
+    "tagline": "Gut Health",
+    "desc": "Probiotic with 1 billion CFU (a blend of Lactobacillus acidophilus, plantarum, rhamnosus, fermentum, and reuteri). Gentle on the stomach and supportive of the immune system; helps break down food, absorb nutrients, and fight harmful organisms.",
+    "spec": "1 Billion CFU",
+    "count": "60 capsules"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size 1 Capsule",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Probiotic blend"
+      ],
+      "amount": "1 Billion CFU",
+      "dv": "†"
+     },
+     {
+      "name": [
+       "Lactobacillus acidophilus, Lactobacillus plantarum, Lactobacillus rhamnosus, Lactobacillus fermentum, Lactobacillus reuteri."
+      ],
+      "amount": "",
+      "dv": "",
+      "note": true
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Gelatin (capsule), white rice flour, magnesium stearate."
+   },
+   "benefits": [
+    {
+     "title": "Gentle on the stomach",
+     "text": "It is naturally present in the healthy human digestive system."
+    },
+    {
+     "title": "Food Decay",
+     "text": "It helps break down food."
+    },
+    {
+     "title": "Efficient absorption",
+     "text": "It helps the body absorb nutrients."
+    },
+    {
+     "title": "Immune System",
+     "text": "It helps the immune system fight harmful organisms."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "The antioxidant of youth: firm, hydrated, and radiant skin."
+    },
+    {
+     "slug": "resveratrol-complex",
+     "desc": "An antioxidant that fights aging and boosts your immune system."
+    },
+    {
+     "slug": "probiotic-advantage",
+     "desc": "30 billion CFU for better digestion and stronger immunity."
+    }
+   ],
+   "seo": {
+    "title": "Probiotic Acidophilus: 5 Lactobacillus Strains | Nuvitt",
+    "description": "A blend of five Lactobacillus strains with one billion CFU in 60 capsules. Supports digestion and daily nutrient absorption."
+   }
+  }
+ },
+ {
+  "slug": "zinc-citrate",
+  "image": "zinc.webp",
+  "heroImage": "zinc.webp",
+  "labelImage": {
+   "es": "ZINC-CITRATE-ESPCS.webp",
+   "en": "ZINC-CITRATE-ESPCS-EN.webp"
+  },
+  "categories": [
+   "inmune"
+  ],
+  "icons": [
+   {
+    "viewBox": "0 0 512 512",
+    "d": [
+     "M224,192a16,16,0,1,0,16,16A16,16,0,0,0,224,192ZM466.5,83.68l-192-80A57.4,57.4,0,0,0,256.05,0a57.4,57.4,0,0,0-18.46,3.67l-192,80A47.93,47.93,0,0,0,16,128C16,326.5,130.5,463.72,237.5,508.32a48.09,48.09,0,0,0,36.91,0C360.09,472.61,496,349.3,496,128A48,48,0,0,0,466.5,83.68ZM384,256H371.88c-28.51,0-42.79,34.47-22.63,54.63l8.58,8.57a16,16,0,1,1-22.63,22.63l-8.57-8.58C306.47,313.09,272,327.37,272,355.88V368a16,16,0,0,1-32,0V355.88c0-28.51-34.47-42.79-54.63-22.63l-8.57,8.58a16,16,0,0,1-22.63-22.63l8.58-8.57c20.16-20.16,5.88-54.63-22.63-54.63H128a16,16,0,0,1,0-32h12.12c28.51,0,42.79-34.47,22.63-54.63l-8.58-8.57a16,16,0,0,1,22.63-22.63l8.57,8.58c20.16,20.16,54.63,5.88,54.63-22.63V112a16,16,0,0,1,32,0v12.12c0,28.51,34.47,42.79,54.63,22.63l8.57-8.58a16,16,0,0,1,22.63,22.63l-8.58,8.57C329.09,189.53,343.37,224,371.88,224H384a16,16,0,0,1,0,32Zm-96,0a16,16,0,1,0,16,16A16,16,0,0,0,288,256Z"
+    ]
+   },
+   {
+    "viewBox": "0 0 640 512",
+    "d": [
+     "M0 160v192c0 35.3 28.7 64 64 64h96V96H64c-35.3 0-64 28.7-64 64zm576-64h-96v320h96c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64zM192 416h256V96H192v320zm176-232c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm0 96c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm-96-96c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm0 96c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24z"
+    ]
+   },
+   {
+    "viewBox": "0 0 384 512",
+    "d": [
+     "M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"
+    ]
+   },
+   {
+    "viewBox": "0 0 576 512",
+    "d": [
+     "M568.25 192c-29.04.13-135.01 6.16-213.84 83-33.12 29.63-53.36 63.3-66.41 94.86-13.05-31.56-33.29-65.23-66.41-94.86-78.83-76.84-184.8-82.87-213.84-83-4.41-.02-7.79 3.4-7.75 7.82.23 27.92 7.14 126.14 88.77 199.3C172.79 480.94 256 480 288 480s115.19.95 199.23-80.88c81.64-73.17 88.54-171.38 88.77-199.3.04-4.42-3.34-7.84-7.75-7.82zM287.98 302.6c12.82-18.85 27.6-35.78 44.09-50.52 19.09-18.61 39.58-33.3 60.26-45.18-16.44-70.5-51.72-133.05-96.73-172.22-4.11-3.58-11.02-3.58-15.14 0-44.99 39.14-80.27 101.63-96.74 172.07 20.37 11.7 40.5 26.14 59.22 44.39a282.768 282.768 0 0 1 45.04 51.46z"
+    ]
+   }
+  ],
+  "es": {
+   "name": "Zinc Citrate",
+   "tagline": "Piel e inmunidad",
+   "intro": "Contribuye al funcionamiento normal del sistema inmunológico y apoya la salud de la piel.",
+   "specs": [
+    "50 mg",
+    "Immune & Skin Support",
+    "60 tabletas"
+   ],
+   "dosage": "Porción recomendada: 1 tableta al día.",
+   "card": {
+    "badge": "Defensas & inmunidad",
+    "tagline": "Piel e inmunidad",
+    "desc": "Fortalece el sistema inmunológico previniendo virus y bacterias, favorece la cicatrización e interviene en la producción de colágeno y elastina para mejorar la firmeza de la piel.",
+    "spec": "50 mg",
+    "count": "60 tabletas"
+   },
+   "nutrition": {
+    "title": "Tabla nutricional",
+    "subtitle": "Información del suplemento",
+    "serving": [
+     "Porción: 1 tableta",
+     "Porciones por envase: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%VD",
+    "rows": [
+     {
+      "name": [
+       "Zinc",
+       "(como Citrato de Zinc)"
+      ],
+      "amount": "50mg",
+      "dv": "455%"
+     }
+    ],
+    "footnote": "† El porcentaje de Valores Diarios (VD) se basa en una dieta de 2,000 calorías.",
+    "others": "Otros ingredientes: Fosfato Dicálcico, Ácido Esteárico, Estearato de Magnesio, Croscarmelosa Sódica, Celulosa Microcristalina."
+   },
+   "benefits": [
+    {
+     "title": "Sistema inmunológico",
+     "text": "Contribuye al funcionamiento normal del sistema inmunológico."
+    },
+    {
+     "title": "Cicatrización de heridas",
+     "text": "Favorece la cicatrización de heridas."
+    },
+    {
+     "title": "Crecimiento y desarrollo",
+     "text": "Apoya el crecimiento y desarrollo de adolescentes y embarazadas."
+    },
+    {
+     "title": "Piel y colágeno",
+     "text": "Interviene en la producción de colágeno y elastina, mejorando la elasticidad y firmeza de la piel y contribuyendo a prevenir el envejecimiento prematuro."
+    }
+   ],
+   "relatedHeading": "También te puede interesar",
+   "related": [
+    {
+     "slug": "vitamin-e-268-mg",
+     "desc": "Antioxidante de la juventud: piel firme, hidratada y luminosa."
+    },
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "Mil millones de CFU para una mejor digestión y defensas más fuertes."
+    },
+    {
+     "slug": "resveratrol-complex",
+     "desc": "Antioxidante que combate el envejecimiento y refuerza tus defensas."
+    }
+   ],
+   "seo": {
+    "title": "Zinc Citrate 50 mg: Defensas y Piel | Nuvitt",
+    "description": "Zinc en forma citrato, 50 mg en 60 tabletas. Contribuye al funcionamiento normal del sistema inmune y a la síntesis de colágeno y elastina."
+   }
+  },
+  "en": {
+   "name": "Zinc Citrate",
+   "tagline": "Skin and Immunity",
+   "intro": "It contributes to the normal functioning of the immune system and supports skin health.",
+   "specs": [
+    "50 mg",
+    "Immune & Skin Support",
+    "60 tablets"
+   ],
+   "dosage": "Recommended serving size: 1 tablet a day.",
+   "card": {
+    "badge": "Defenses & Immunity",
+    "tagline": "Skin and Immunity",
+    "desc": "It strengthens the immune system by helping to prevent viruses and bacteria, promotes healing, and plays a role in the production of collagen and elastin to improve skin firmness.",
+    "spec": "50 mg",
+    "count": "60 tablets"
+   },
+   "nutrition": {
+    "title": "Nutrition Facts",
+    "subtitle": "Supplement facts",
+    "serving": [
+     "Serving Size: 1 tablet",
+     "Servings per package: 60"
+    ],
+    "amountHeader": null,
+    "dvHeader": "%DV",
+    "rows": [
+     {
+      "name": [
+       "Zinc",
+       "(as Zinc Citrate)"
+      ],
+      "amount": "50mg",
+      "dv": "455%"
+     }
+    ],
+    "footnote": "† The Daily Values (DV) percentages are based on a 2,000 calorie diet.",
+    "others": "Other ingredients: Dicalcium Phosphate, Stearic Acid, Magnesium Stearate, Croscarmellose Sodium, Microcrystalline Cellulose."
+   },
+   "benefits": [
+    {
+     "title": "Immune System",
+     "text": "It supports the normal functioning of the immune system."
+    },
+    {
+     "title": "Wound healing",
+     "text": "It promotes wound healing."
+    },
+    {
+     "title": "Growth and Development",
+     "text": "It supports the growth and development of adolescents and pregnant women."
+    },
+    {
+     "title": "Skin and Collagen",
+     "text": "It plays a role in the production of collagen and elastin, improving the skin's elasticity and firmness and helping to prevent premature aging."
+    }
+   ],
+   "relatedHeading": "You may also be interested in",
+   "related": [
+    {
+     "slug": "probiotic-acidophilus",
+     "desc": "One billion CFU for better digestion and stronger immunity."
+    },
+    {
+     "slug": "melatonin-extra-strength",
+     "desc": "Promotes sleep and combats insomnia without causing dependence."
+    },
+    {
+     "slug": "artiflex-advantage",
+     "desc": "Protect and restore your joints so you can move without pain."
+    }
+   ],
+   "seo": {
+    "title": "Zinc Citrate 50 mg: Immunity and Skin | Nuvitt",
+    "description": "Zinc citrate, 50 mg in 60 tablets. Supports normal immune function and collagen and elastin synthesis."
+   }
+  }
+ }
+]

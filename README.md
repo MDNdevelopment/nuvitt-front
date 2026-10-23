@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nuvitt — sitio web (Next.js)
 
-## Getting Started
+Reconstrucción de [nuvitt.com](https://nuvitt.com) (antes WordPress + Elementor) en Next.js.
+Es una réplica fiel del sitio actual, en español e inglés, preparada para sumar un ecommerce más adelante.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router) · React · TypeScript
+- Tailwind CSS v4 (tokens de diseño en `src/app/globals.css`)
+- Embla Carousel (sliders) · fuentes con `next/font` (Raleway, Manrope, Roboto, Montserrat)
+- Formulario de contacto vía [FormSubmit](https://formsubmit.co)
+- Despliegue en Netlify (`netlify.toml`)
+
+## Comandos
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # genera las 42 páginas estáticas
+npm run start    # sirve el build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+  app/
+    [lang]/                 layout (header/footer/fuentes) + páginas
+      page.tsx              Home
+      productos/page.tsx    Catálogo con filtros
+      [slug]/page.tsx       Ficha de producto (13 productos × 2 idiomas)
+      nosotros/page.tsx     Nosotros + galerías de ubicaciones
+      contacto/page.tsx     Contacto + formulario
+    sitemap.ts · robots.ts · icon.png · apple-icon.png
+  components/               Header, Footer, HeroCarousel, BenefitsCarousel, ProductCard, …
+  data/
+    products.json           Fuente única de los 13 productos (textos ES/EN, tabla nutricional,
+                            beneficios, categorías, imágenes, SEO)  ← aquí se edita el catálogo
+    products.ts             Tipos y helpers
+    locations.ts            Ubicaciones y fotos de la página Nosotros
+    image-sizes.json        Dimensiones de public/images (lo usa lib/images.ts)
+  dictionaries/es.ts · en.ts  Textos de la interfaz y de las secciones fijas
+  lib/                      i18n, SEO, constantes del sitio (contacto, puntos de venta)
+public/images · public/videos   Assets migrados desde WordPress
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Idiomas y URLs
 
-## Learn More
+- Español en la raíz (`/productos/`) e inglés bajo `/en/` (`/en/productos/`), igual que en WordPress.
+- Internamente todo vive en `app/[lang]/…`; el español se reescribe a `/es/…` mediante `rewrites` en
+  `next.config.ts` (sin middleware, por lo que funciona en cualquier hosting). `/es/…` redirige a la URL sin prefijo.
+- Las URLs conservan la barra final (`trailingSlash: true`) para no perder SEO.
+- Redirecciones heredadas: `/vitamin-e-268-mg-2/` → `/vitamin-e-268-mg/`, `/feed/`, `/nuvitt/*`.
+- Cada página emite `canonical` y `hreflang` (es / en / x-default).
 
-To learn more about Next.js, take a look at the following resources:
+## Formulario de contacto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Envía por `fetch` a `https://formsubmit.co/ajax/ventas@nuvitt.com` (con honeypot anti-spam).
+**El primer envío dispara un correo de activación a ventas@nuvitt.com**: hay que abrirlo y confirmarlo
+una vez; hasta entonces los mensajes no llegan. Opcionalmente, define `NEXT_PUBLIC_FORMSUBMIT_TARGET`
+con el alias aleatorio que entrega FormSubmit para no exponer el correo (ver `.env.example`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Despliegue (Netlify)
 
-## Deploy on Vercel
+1. Importa el repositorio en Netlify (detecta Next.js automáticamente; `netlify.toml` ya fija Node 22).
+2. Variable de entorno `NEXT_PUBLIC_SITE_URL=https://nuvitt.com`.
+3. Apunta el dominio y revisa `/sitemap.xml` y `/robots.txt`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pensando en el ecommerce
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Los productos ya están modelados en `src/data/products.json` con `slug` estable. Para vender basta con
+añadir `sku`, `price`, `stock` (o enlazar un catálogo externo como Shopify/Stripe/Medusa) y crear
+carrito/checkout sobre `app/[lang]/[slug]`.
