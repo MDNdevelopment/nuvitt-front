@@ -3,9 +3,8 @@ import { notFound } from "next/navigation";
 import ProductCard from "@/components/ProductCard";
 import ProductsExplorer from "@/components/ProductsExplorer";
 import { categoryKeys } from "@/data/products";
-import AddToCart from "@/components/shop/AddToCart";
 import { getDictionary } from "@/lib/dictionaries";
-import { hasLocale, localePath } from "@/lib/i18n";
+import { hasLocale } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
 import { getCatalog } from "@/lib/shop/catalog";
 import { getProducts } from "@/lib/shop/content";
@@ -52,35 +51,23 @@ export default async function ProductsPage({ params }: PageProps<"/[lang]/produc
         filterLabel={dict.products.filterLabel}
         emptyLabel={dict.products.empty}
         categories={categoryKeys.map((key) => ({ key, label: dict.products.categories[key] }))}
-        items={products.map((product, i) => ({
-          slug: product.slug,
-          categories: product.categories,
-          node: (
+        countLabel={dict.products.count}
+        countOneLabel={dict.products.countOne}
+        items={products.map((product, i) => {
+          const o = catalog.enabled ? catalog.items[product.slug] : undefined;
+          const offer = o && { id: o.id, usd: o.price_usd, stock: o.stock, rate: catalog.rate };
+          const card = (
             <ProductCard
               product={product}
               lang={lang}
               viewLabel={dict.common.viewProduct}
               priority={i < 3}
-              buy={
-                catalog.enabled && catalog.items[product.slug] ? (
-                  <AddToCart
-                    compact
-                    lang={lang}
-                    slug={product.slug}
-                    labels={labels}
-                    cartHref={localePath(lang, "/carrito/")}
-                    initial={{
-                      id: catalog.items[product.slug].id,
-                      usd: catalog.items[product.slug].price_usd,
-                      stock: catalog.items[product.slug].stock,
-                      rate: catalog.rate,
-                    }}
-                  />
-                ) : undefined
-              }
+              offer={offer}
+              labels={labels}
             />
-          ),
-        }))}
+          );
+          return { slug: product.slug, categories: product.categories, node: card };
+        })}
       />
     </>
   );

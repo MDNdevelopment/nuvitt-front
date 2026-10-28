@@ -12,6 +12,8 @@ type Props = {
   allLabel: string;
   filterLabel: string;
   emptyLabel: string;
+  countLabel: string;
+  countOneLabel: string;
 };
 
 export default function ProductsExplorer({
@@ -20,6 +22,8 @@ export default function ProductsExplorer({
   allLabel,
   filterLabel,
   emptyLabel,
+  countLabel,
+  countOneLabel,
 }: Props) {
   const [active, setActive] = useState<CategoryKey | "all">("all");
 
@@ -75,11 +79,14 @@ export default function ProductsExplorer({
         </div>
       </div>
 
-      <div className="mx-auto w-[min(100%-2rem,1140px)] pb-28 pt-12">
+      <div className="mx-auto w-[min(100%-2rem,1140px)] pb-28 pt-8">
+        <p className="mb-6 font-manrope text-sm font-semibold text-slate" aria-live="polite">
+          {visible.length === 1 ? countOneLabel : countLabel.replace("{n}", String(visible.length))}
+        </p>
         {visible.length === 0 ? (
           <p className="py-16 text-center text-body">{emptyLabel}</p>
         ) : (
-          <ul className="grid gap-x-[30px] gap-y-[90px] sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid gap-x-[30px] gap-y-[96px] sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((i) => (
               <li key={i.slug}>{i.node}</li>
             ))}

@@ -58,6 +58,8 @@ export type Settings = {
   merchant_rif: string;
   merchant_phone: string;
   admin_email: string;
+  transfer_details: string;
+  zelle_details: string;
 };
 
 export type ShopConfig = {
@@ -65,6 +67,7 @@ export type ShopConfig = {
   rate_updated_at: string;
   free_shipping_usd: number;
   payments_enabled: boolean;
+  methods?: { c2p: boolean; transfer: string | null; zelle: string | null };
 };
 
 export type ListResult<T> = { page: number; perPage: number; totalItems: number; totalPages: number; items: T[] };
@@ -119,6 +122,8 @@ export type AdminPayment = {
   method: string;
   status: string;
   amount_bs: number;
+  amount_usd?: number;
+  payer_name?: string;
   bank: string;
   reference: string;
   response_code: string;

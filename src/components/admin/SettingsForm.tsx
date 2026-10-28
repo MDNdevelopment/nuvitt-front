@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { saveSettingsAction } from "@/lib/admin/actions/settings";
 import type { FormState, Settings } from "@/lib/admin/types";
 import SubmitButton from "./SubmitButton";
-import { Card, Field, Flash, Input } from "./ui";
+import { Card, Field, Flash, Input, Textarea } from "./ui";
 
 export default function SettingsForm({ settings }: { settings: Settings }) {
   const [state, action] = useActionState<FormState, FormData>(saveSettingsAction.bind(null, settings.id), {});
@@ -35,6 +35,24 @@ export default function SettingsForm({ settings }: { settings: Settings }) {
         </Field>
         <Field label="Correo del administrador" htmlFor="admin_email" error={e.admin_email} hint="Recibirá los avisos de órdenes nuevas.">
           <Input name="admin_email" type="email" defaultValue={val("admin_email", settings.admin_email)} error={e.admin_email} />
+        </Field>
+      </Card>
+      <Card className="grid gap-4 sm:grid-cols-2">
+        <Field
+          label="Datos para transferencia / pago móvil"
+          htmlFor="transfer_details"
+          error={e.transfer_details}
+          hint="Lo ve el cliente al elegir este método (banco, cuenta o teléfono, titular, cédula/RIF). Vacío = método apagado."
+        >
+          <Textarea name="transfer_details" rows={5} defaultValue={val("transfer_details", settings.transfer_details)} error={e.transfer_details} />
+        </Field>
+        <Field
+          label="Datos para Zelle"
+          htmlFor="zelle_details"
+          error={e.zelle_details}
+          hint="Correo o teléfono de Zelle y titular. Vacío = método apagado."
+        >
+          <Textarea name="zelle_details" rows={5} defaultValue={val("zelle_details", settings.zelle_details)} error={e.zelle_details} />
         </Field>
       </Card>
       <Flash ok={state.ok} message={state.message} />

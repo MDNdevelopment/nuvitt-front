@@ -5,7 +5,7 @@ import { btnGhost, card } from "@/components/shop/ui";
 import { getDictionary } from "@/lib/dictionaries";
 import { hasLocale, localePath } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
-import { getOrderByNumber } from "@/lib/shop/data";
+import { getOrderByNumber, listOrderPayments } from "@/lib/shop/data";
 import { formatBs, formatUsd } from "@/lib/shop/format";
 import { requireCustomer } from "@/lib/shop/session";
 import { SHOP_ENABLED } from "@/lib/site";
@@ -29,6 +29,8 @@ export default async function ThanksPage({ params, searchParams }: PageProps<"/[
   const dict = await getDictionary(lang);
   const t = dict.thanks;
   const verifying = order.status === "por_verificar";
+  // Transferencia / Zelle: el pago lo verifica el equipo, no el banco al instante.
+  const manual = verifying && (await listOrderPayments(token, order.id)).some((p) => p.method === "transfer" || p.method === "zelle");
 
   return (
     <section className="py-12 min-[1025px]:py-[90px]">
@@ -37,8 +39,8 @@ export default async function ThanksPage({ params, searchParams }: PageProps<"/[
           <span aria-hidden className={`mx-auto mb-5 grid size-16 place-items-center rounded-full text-3xl text-white ${verifying ? "bg-[#e0a030]" : "bg-accent"}`}>
             {verifying ? "…" : "✓"}
           </span>
-          <h1 className="font-raleway text-[32px] font-bold leading-tight text-heading-dark">{verifying ? t.titleVerifying : t.titlePaid}</h1>
-          <p className="mt-3 text-secondary">{verifying ? t.textVerifying : t.textPaid}</p>
+          <h1 className="font-raleway text-[32px] font-bold leading-tight text-heading-dark">{manual ? t.titleManual : verifying ? t.titleVerifying : t.titlePaid}</h1>
+          <p className="mt-3 text-secondary">{manual ? t.textManual : verifying ? t.textVerifying : t.textPaid}</p>
           <div className="mt-6 rounded-lg bg-product-bg/50 p-4 text-left text-sm">
             <p className="font-raleway text-lg font-bold text-heading-deep">{t.order.replace("{n}", String(order.number))}</p>
             <ul className="mt-2 space-y-1 text-secondary">

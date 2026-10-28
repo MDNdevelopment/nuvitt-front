@@ -15,12 +15,16 @@ export async function saveSettingsAction(id: string, _prev: FormState, fd: FormD
   const phoneRaw = str(fd, "merchant_phone");
   const phone = phoneRaw ? normalizePhone(phoneRaw) : "";
   const email = str(fd, "admin_email");
+  const transfer = str(fd, "transfer_details");
+  const zelle = str(fd, "zelle_details");
 
   requireNumber(errors, "rate_override", override, { min: 0 });
   requireNumber(errors, "free_shipping_usd", free, { min: 0 });
   if (rif && !/^[JGVEPC]\d{7,10}$/.test(rif)) errors.merchant_rif = "Formato esperado: J123456789 (letra y números).";
   if (phoneRaw && !phone) errors.merchant_phone = "Escribe un móvil válido, p. ej. 0424 246 8892.";
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.admin_email = "El correo no es válido.";
+  if (transfer.length > 1000) errors.transfer_details = "Máximo 1000 caracteres.";
+  if (zelle.length > 1000) errors.zelle_details = "Máximo 1000 caracteres.";
   if (Object.keys(errors).length) return { message: "Revisa los campos marcados.", errors, values: valuesOf(fd) };
 
   try {
@@ -33,6 +37,8 @@ export async function saveSettingsAction(id: string, _prev: FormState, fd: FormD
         merchant_rif: rif,
         merchant_phone: phone,
         admin_email: email,
+        transfer_details: transfer,
+        zelle_details: zelle,
       },
     });
   } catch (e) {

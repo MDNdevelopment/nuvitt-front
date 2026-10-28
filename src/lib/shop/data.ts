@@ -5,16 +5,24 @@ import type { Address, Order, OrderEvent, Payment } from "./types";
 export type ShippingZone = { id: string; name_es: string; name_en: string; price_usd: number; kind: string };
 
 /** Zonas de envío activas (la regla pública de PocketBase solo devuelve las activas). */
-export async function listActiveZones(token: string) {
+export async function listActiveZones(token?: string) {
   return (await pb<{ items: ShippingZone[] }>("/api/collections/shipping_zones/records", { token, query: { perPage: 50, sort: "sort,name_es" } })).items;
 }
 
-/** ¿Están habilitados los pagos? Depende del backend (credenciales de Banco Plaza y teléfono cobrador). */
-export async function paymentsEnabled(): Promise<boolean> {
+export type PaymentConfig = {
+  enabled: boolean;
+  /** c2p: Pago Móvil automático; transfer / zelle: texto con los datos de la cuenta, o null si el método está apagado. */
+  methods: { c2p: boolean; transfer: string | null; zelle: string | null };
+};
+
+/** Métodos de pago habilitados según el backend (credenciales de Banco Plaza, teléfono cobrador y datos de cuenta). */
+export async function paymentConfig(): Promise<PaymentConfig> {
   try {
-    return (await pb<{ payments_enabled: boolean }>("/api/shop/config")).payments_enabled === true;
+    const c = await pb<{ payments_enabled: boolean; methods?: Partial<PaymentConfig["methods"]> }>("/api/shop/config");
+    const methods = { c2p: c.methods?.c2p === true, transfer: c.methods?.transfer ?? null, zelle: c.methods?.zelle ?? null };
+    return { enabled: c.payments_enabled === true, methods };
   } catch {
-    return false;
+    return { enabled: false, methods: { c2p: false, transfer: null, zelle: null } };
   }
 }
 

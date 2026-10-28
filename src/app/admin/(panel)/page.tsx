@@ -41,7 +41,9 @@ export default async function DashboardPage() {
   }
   checklist.push({
     ok: !!config?.payments_enabled,
-    label: config?.payments_enabled ? "Pagos con Banco Plaza habilitados" : "Pagos con Banco Plaza deshabilitados (faltan credenciales del banco o el teléfono cobrador)",
+    label: config?.payments_enabled
+      ? `Pagos habilitados: ${[config.methods?.c2p && "C2P", config.methods?.transfer && "transferencia", config.methods?.zelle && "Zelle"].filter(Boolean).join(", ")}`
+      : "Pagos deshabilitados (faltan credenciales de Banco Plaza o los datos de transferencia / Zelle en Ajustes)",
     href: isAdmin ? "/admin/ajustes/" : "/admin/",
   });
 

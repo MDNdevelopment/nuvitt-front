@@ -33,7 +33,7 @@ export default async function OrdersPage({ searchParams }: Props) {
       <PageHeader title="Órdenes" subtitle="Pedidos de los clientes. Entra a una orden para cambiar su estado, cargar la guía o escribir notas." />
 
       {!config?.payments_enabled && (
-        <p className="mb-4 rounded-md bg-[#fff4e0] px-4 py-3 text-sm text-[#a96400]">Los pagos en línea aún no están habilitados: las órdenes aparecerán aquí cuando se active Banco Plaza.</p>
+        <p className="mb-4 rounded-md bg-[#fff4e0] px-4 py-3 text-sm text-[#a96400]">Los pagos en línea aún no están habilitados: las órdenes aparecerán aquí cuando se active Banco Plaza o se configuren los datos de transferencia / Zelle en Ajustes.</p>
       )}
 
       <nav aria-label="Estados" className="mb-4 flex flex-wrap gap-2">

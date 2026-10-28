@@ -54,6 +54,13 @@ const TRANSITIONS: Record<string, OrderStatus[]> = {
 export const nextStatuses = (from: string): OrderStatus[] => TRANSITIONS[from] ?? [];
 export const canTransition = (from: string, to: string) => nextStatuses(from).includes(to as OrderStatus);
 
+export const METHOD_LABEL: Record<string, string> = {
+  c2p: "Pago móvil C2P",
+  p2p: "Pago móvil P2P",
+  transfer: "Transferencia / Pago móvil",
+  zelle: "Zelle",
+};
+
 export const PAYMENT_LABEL: Record<string, string> = {
   aprobado: "Aprobado",
   rechazado: "Rechazado",

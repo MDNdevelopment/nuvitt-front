@@ -5,7 +5,7 @@ import OrderActions from "@/components/admin/OrderActions";
 import { Badge, btnGhost, Card, PageHeader } from "@/components/admin/ui";
 import { getOrderByNumber, listOrderEvents, listOrderPayments } from "@/lib/admin/data";
 import { formatBs, formatDate, formatUsd } from "@/lib/admin/format";
-import { nextStatuses, PAYMENT_LABEL, STATUS_LABEL, STATUS_TONE } from "@/lib/admin/order-flow";
+import { METHOD_LABEL, nextStatuses, PAYMENT_LABEL, STATUS_LABEL, STATUS_TONE } from "@/lib/admin/order-flow";
 import { requireStaff } from "@/lib/admin/session";
 
 type Props = { params: Promise<{ numero: string }> };
@@ -102,10 +102,12 @@ export default async function OrderDetailPage({ params }: Props) {
                 {payments.map((p) => (
                   <li key={p.id} className="rounded-md border border-[#eef1f4] p-3">
                     <p className="font-semibold text-ink">
-                      {p.method.toUpperCase()} · {PAYMENT_LABEL[p.status] ?? p.status} · {formatBs(p.amount_bs)}
+                      {METHOD_LABEL[p.method] ?? p.method.toUpperCase()} · {PAYMENT_LABEL[p.status] ?? p.status} · {formatBs(p.amount_bs)}
+                      {p.method === "zelle" && p.amount_usd ? ` (US$ ${p.amount_usd.toFixed(2)})` : ""}
                     </p>
                     <p className="text-xs text-slate">
                       {formatDate(p.created)}
+                      {p.payer_name ? ` · Titular ${p.payer_name}` : ""}
                       {p.bank ? ` · Banco ${p.bank}` : ""}
                       {p.reference ? ` · Ref. ${p.reference}` : ""}
                       {p.response_code ? ` · Código ${p.response_code}` : ""}

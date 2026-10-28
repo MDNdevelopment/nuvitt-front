@@ -42,7 +42,7 @@ export function AuthForms({ lang, labels, next }: { lang: string; labels: Accoun
   );
 }
 
-function LoginForm({ lang, labels, next }: { lang: string; labels: AccountLabels; next?: string }) {
+export function LoginForm({ lang, labels, next }: { lang: string; labels: AccountLabels; next?: string }) {
   const [state, action] = useActionState(loginAction.bind(null, lang), initial);
   const val = useVal(state);
   return (

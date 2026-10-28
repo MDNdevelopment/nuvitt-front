@@ -7,6 +7,7 @@ import HeroCarousel, { type HeroTile } from "@/components/HeroCarousel";
 import PurewaySection from "@/components/PurewaySection";
 import RetailersMarquee from "@/components/RetailersMarquee";
 import RitualSection from "@/components/RitualSection";
+import { rawProducts } from "@/data/products";
 import { getDictionary } from "@/lib/dictionaries";
 import { hasLocale, localePath } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/seo";
@@ -47,14 +48,17 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang);
 
-  // La grilla y los destacados siguen al catálogo: un producto oculto o desactivado no aparece.
+  // La grilla del hero muestra siempre todos los frascos, estén activos o no en la tienda
+  // (los nombres salen de products.json, no de PocketBase). Los destacados sí siguen al catálogo.
+  const names = new Map(rawProducts.map((p) => [p.slug, p[lang].name]));
+  const tiles: HeroTile[] = HERO_TILES.map((t) => ({
+    bottle: t.bottle,
+    bg: t.bg,
+    alt: names.get(t.slug) ?? t.slug,
+  }));
+
   const catalog = await getProducts();
   const bySlug = new Map(catalog.map((p) => [p.slug, p]));
-
-  const tiles: HeroTile[] = HERO_TILES.flatMap((t) => {
-    const product = bySlug.get(t.slug);
-    return product ? [{ bottle: t.bottle, bg: t.bg, alt: product[lang].name }] : [];
-  });
 
   const slides: BenefitSlide[] = dict.home.slides.map((s) => {
     const product = bySlug.get(s.product);

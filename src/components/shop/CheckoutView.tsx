@@ -2,55 +2,109 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState, useTransition } from "react";
-import { payAction, quoteAction, type CheckoutError, type Quote } from "@/lib/shop/actions/checkout";
+import { useEffect, useMemo, useState, useTransition, type ChangeEvent, type ReactNode } from "react";
+import { normalizePhone } from "@/lib/admin/validate";
+import { placeOrderAction, quoteAction, type CheckoutError, type Quote } from "@/lib/shop/actions/checkout";
 import { useCart, useLiveCatalog } from "@/lib/shop/cart";
 import { formatBs, formatUsd } from "@/lib/shop/format";
 import type { Locale } from "@/lib/i18n";
+import { checkAccount, checkAddress, normCedula, paymentOk, type AccountInput, type AddressInput, type FieldErrors, type PaymentInput, type ValidationMessages } from "@/lib/shop/validate";
+import { LoginForm, type AccountLabels } from "./AccountForms";
 import { btnGhost, btnPrimary, card, Field, Flash, Input } from "./ui";
 
+type MethodLabel = { title: string; desc: string };
+
 export type CheckoutLabels = {
-  empty: string; emptyCta: string; address: string; addAddress: string; noAddresses: string; zone: string; free: string; noZones: string;
+  empty: string; emptyCta: string; address: string; newAddress: string; noAddresses: string; zone: string; free: string; noZones: string;
   coupon: string; couponPlaceholder: string; apply: string; removeCoupon: string; couponApplied: string; summary: string; subtotal: string;
   discount: string; shipping: string; total: string; totalBs: string; rate: string; payment: string; paymentIntro: string; bank: string;
   bankPlaceholder: string; id: string; phone: string; token: string; tokenHint: string; pay: string; paying: string; quoting: string;
   disabledNotice: string; back: string; errors: Record<CheckoutError, string>;
+  yourData: string; yourDataIntro: string; haveAccount: string; loginInline: string; loginClose: string;
+  methods: { c2p: MethodLabel; transfer: MethodLabel; zelle: MethodLabel };
+  c2pIntro: string; transferIntro: string; zelleIntro: string; transferAmount: string; zelleAmount: string; originBank: string;
+  reference: string; referenceHintTransfer: string; referenceHintZelle: string; payerName: string; copy: string; copied: string;
+  manualNotice: string; confirmOrder: string; confirming: string;
 };
+
+type Method = "c2p" | "transfer" | "zelle";
 
 type Props = {
   lang: Locale;
   labels: CheckoutLabels;
-  user: { phone: string; cedula: string };
+  account: AccountLabels;
+  accountErrors: ValidationMessages;
+  /** null = invitado: se le pide crear la cuenta en este mismo formulario. */
+  user: { name: string; email: string; phone: string; cedula: string } | null;
   addresses: { id: string; label: string; recipient: string; phone: string; line: string; city: string; state: string }[];
   zones: { id: string; name: string; price: number }[];
   banks: { code: string; name: string }[];
-  paymentsEnabled: boolean;
-  hrefs: { cart: string; products: string; addAddress: string; thanks: string };
+  methods: { c2p: boolean; transfer: string | null; zelle: string | null };
+  hrefs: { cart: string; products: string; thanks: string; checkout: string };
 };
 
 type QuoteState = { key: string; quote: Quote | null; error: CheckoutError | null };
 
-const ID_RE = /^[VEJGP]\d{5,10}$/;
-const phoneOk = (p: string) => {
-  const d = p.replace(/\D/g, "").replace(/^0058/, "").replace(/^58/, "").replace(/^0/, "");
-  return d.length === 10 && d.startsWith("4");
-};
+const NEW = "new";
+/** Tras crear la cuenta y fallar la compra: "la primera dirección guardada" (la que acabamos de crear). */
+const JUST_SAVED = "just-saved";
 
-export default function CheckoutView({ lang, labels: t, user, addresses, zones, banks, paymentsEnabled, hrefs }: Props) {
+const emptyAccount: AccountInput = { name: "", email: "", phone: "", cedula: "", password: "", passwordConfirm: "" };
+const selectClass = "w-full rounded-md border border-[#d7dee6] bg-white px-4 py-[11px] text-base text-secondary outline-none focus:border-primary-dark focus:ring-2 focus:ring-primary-dark/15 aria-[invalid=true]:border-[#c62828]";
+
+export default function CheckoutView({ lang, labels: t, account: accLabels, accountErrors, user, addresses, zones, banks, methods, hrefs }: Props) {
   const router = useRouter();
   const { lines, clear } = useCart();
   const live = useLiveCatalog();
   const ready = !!live?.enabled;
+  const f = accLabels.fields;
 
-  const [addressId, setAddressId] = useState(addresses[0]?.id ?? "");
+  const available = (["c2p", "transfer", "zelle"] as const).filter((m) => (m === "c2p" ? methods.c2p : !!methods[m]));
+  const guest = !user;
+
+  // Cuenta (solo invitado)
+  const [acc, setAcc] = useState<AccountInput>(emptyAccount);
+  const [showLogin, setShowLogin] = useState(false);
+  const setA = (k: keyof AccountInput) => (e: ChangeEvent<HTMLInputElement>) => setAcc((p) => ({ ...p, [k]: e.target.value }));
+
+  // Dirección: una guardada o una nueva (la que escriba aquí se guarda en su libreta al comprar)
+  const [addressSel, setAddressSel] = useState(addresses[0]?.id ?? NEW);
+  const addressId = addressSel === JUST_SAVED ? (addresses[0]?.id ?? NEW) : addressSel;
+  const [addr, setAddr] = useState<Partial<AddressInput>>({});
+  const newAddr: AddressInput = {
+    label: addr.label ?? "",
+    recipient: addr.recipient ?? (user?.name || acc.name),
+    phone: addr.phone ?? (user?.phone || acc.phone),
+    state: addr.state ?? "",
+    city: addr.city ?? "",
+    line: addr.line ?? "",
+    reference: addr.reference ?? "",
+  };
+  const setD = (k: keyof AddressInput) => (e: ChangeEvent<HTMLInputElement>) => setAddr((p) => ({ ...p, [k]: e.target.value }));
+
   const [zoneId, setZoneId] = useState(zones[0]?.id ?? "");
   const [couponInput, setCouponInput] = useState("");
   const [coupon, setCoupon] = useState("");
   const [couponError, setCouponError] = useState(false);
-  const [bank, setBank] = useState("");
-  const [payId, setPayId] = useState(user.cedula);
-  const [payPhone, setPayPhone] = useState(user.phone);
+
+  // Pago
+  const [method, setMethod] = useState<Method | undefined>(undefined);
+  const payMethod: Method | undefined = method && available.includes(method) ? method : available[0];
+  const [c2pBank, setC2pBank] = useState("");
+  const [payIdIn, setPayIdIn] = useState<string>();
+  const [payPhoneIn, setPayPhoneIn] = useState<string>();
   const [payToken, setPayToken] = useState("");
+  const [tBank, setTBank] = useState("");
+  const [tRef, setTRef] = useState("");
+  const [zRef, setZRef] = useState("");
+  const [zNameIn, setZNameIn] = useState<string>();
+  const payId = payIdIn ?? (user?.cedula || acc.cedula);
+  const payPhone = payPhoneIn ?? (user?.phone || acc.phone);
+  const zName = zNameIn ?? (user?.name || acc.name);
+
+  // Tras el primer intento de envío los errores se recalculan en vivo, así desaparecen al corregir cada campo.
+  const [submitted, setSubmitted] = useState(false);
+  const [takenEmail, setTakenEmail] = useState<string | null>(null);
   const [payError, setPayError] = useState<string | null>(null);
   const [paying, startPaying] = useTransition();
 
@@ -91,20 +145,59 @@ export default function CheckoutView({ lang, labels: t, user, addresses, zones, 
   }, [canQuote, key, lang, items, zoneId, coupon]);
 
   const quote = current?.quote ?? null;
-  const idNorm = payId.toUpperCase().replace(/[\s.-]/g, "");
-  const formOk = !!addressId && !!zoneId && /^\d{4}$/.test(bank) && ID_RE.test(idNorm) && phoneOk(payPhone) && /^\d{8,12}$/.test(payToken);
-  const canPay = paymentsEnabled && !!quote && !quoting && !paying && formOk;
+  const canSubmit = !!payMethod && !!quote && !quoting && !paying && !!zoneId;
 
-  const onPay = () => {
+  const buildPayment = (m: Method): PaymentInput =>
+    m === "c2p" ? { method: "c2p", bank: c2pBank, id: normCedula(payId), phone: payPhone, token: payToken }
+    : m === "transfer" ? { method: "transfer", bank: tBank, reference: tRef }
+    : { method: "zelle", reference: zRef, payerName: zName };
+
+  const errors = {
+    account: guest ? checkAccount(acc, accountErrors) : {},
+    address: addressId === NEW ? checkAddress(newAddr, accountErrors) : {},
+    payment: !!payMethod && !paymentOk(buildPayment(payMethod)),
+  };
+  const hasErrors = Object.keys(errors.account).length > 0 || Object.keys(errors.address).length > 0 || errors.payment;
+
+  const focusFirstError = () =>
+    setTimeout(() => document.querySelector<HTMLElement>('[aria-invalid="true"]')?.scrollIntoView({ block: "center", behavior: "smooth" }), 0);
+
+  const onSubmit = () => {
+    if (!payMethod) return;
     setPayError(null);
+    setSubmitted(true);
+    if (hasErrors) {
+      setPayError(t.errors.fields);
+      focusFirstError();
+      return;
+    }
+    const payment = buildPayment(payMethod);
+
     startPaying(async () => {
-      const r = await payAction(lang, { items, zone: zoneId, address: addressId, coupon, payment: { bank, id: idNorm, phone: payPhone, token: payToken } });
+      const r = await placeOrderAction(lang, {
+        items,
+        zone: zoneId,
+        coupon,
+        address: addressId === NEW ? { fields: newAddr } : { id: addressId },
+        account: guest ? acc : undefined,
+        payment,
+      });
       if (r.ok) {
         clear();
         router.push(`${hrefs.thanks}?orden=${r.number}`);
-      } else {
-        setPayError(r.message ?? t.errors[r.error]);
+        return;
       }
+      setPayError(r.message ?? t.errors[r.error]);
+      if (r.error === "emailTaken") {
+        setTakenEmail(acc.email);
+        setShowLogin(true);
+      }
+      if (r.accountCreated) {
+        // La cuenta ya existe: se recarga la página con sesión, y la dirección recién guardada queda seleccionada.
+        if (addressId === NEW) setAddressSel(JUST_SAVED);
+        router.refresh();
+      }
+      if (r.error === "emailTaken" || r.error === "fields") focusFirstError();
     });
   };
 
@@ -119,18 +212,64 @@ export default function CheckoutView({ lang, labels: t, user, addresses, zones, 
     );
   }
 
+  const n = guest ? { address: 2, zone: 3, payment: 4 } : { address: 1, zone: 2, payment: 3 };
+  const show = submitted;
+  const ea: FieldErrors = show ? { ...errors.account } : {};
+  if (takenEmail !== null && takenEmail === acc.email) ea.email = accountErrors.emailTaken;
+  const ed: FieldErrors = show ? errors.address : {};
+  const payErr = show && errors.payment ? t.errors.payment : undefined;
+
   return (
     <div className="grid items-start gap-8 lg:grid-cols-[1fr_380px]">
       <div className="space-y-6">
+        {guest && (
+          <section className={card}>
+            <Title n={1}>{t.yourData}</Title>
+            <p className="mb-4 text-sm text-body">
+              {t.yourDataIntro} {t.haveAccount}{" "}
+              <button type="button" onClick={() => setShowLogin((v) => !v)} aria-expanded={showLogin} className="font-semibold text-link-blue underline">
+                {showLogin ? t.loginClose : t.loginInline}
+              </button>
+            </p>
+            {showLogin && (
+              <div className="mb-5 rounded-lg border border-[#dce6f1] bg-product-bg/40 p-4">
+                <LoginForm lang={lang} labels={accLabels} next={hrefs.checkout} />
+              </div>
+            )}
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="sm:col-span-2">
+                <Field label={f.name} htmlFor="ck-name" error={ea.name}>
+                  <Input id="ck-name" value={acc.name} onChange={setA("name")} autoComplete="name" error={ea.name} />
+                </Field>
+              </div>
+              <div className="sm:col-span-2">
+                <Field label={f.email} htmlFor="ck-email" error={ea.email}>
+                  <Input id="ck-email" type="email" value={acc.email} onChange={setA("email")} autoComplete="email" error={ea.email} />
+                </Field>
+              </div>
+              <Field label={f.phone} htmlFor="ck-phone" hint={f.phoneHint} error={ea.phone}>
+                <Input id="ck-phone" type="tel" value={acc.phone} onChange={setA("phone")} autoComplete="tel" error={ea.phone} />
+              </Field>
+              <Field label={f.cedula} htmlFor="ck-cedula" hint={f.cedulaHint} error={ea.cedula}>
+                <Input id="ck-cedula" value={acc.cedula} onChange={setA("cedula")} autoComplete="off" error={ea.cedula} />
+              </Field>
+              <Field label={f.password} htmlFor="ck-password" hint={f.passwordHint} error={ea.password}>
+                <Input id="ck-password" type="password" value={acc.password} onChange={setA("password")} autoComplete="new-password" error={ea.password} />
+              </Field>
+              <Field label={f.passwordConfirm} htmlFor="ck-confirm" error={ea.passwordConfirm}>
+                <Input id="ck-confirm" type="password" value={acc.passwordConfirm} onChange={setA("passwordConfirm")} autoComplete="new-password" error={ea.passwordConfirm} />
+              </Field>
+            </div>
+          </section>
+        )}
+
         <section className={card}>
-          <h2 className="mb-4 font-raleway text-xl font-bold text-heading-dark">{t.address}</h2>
-          {addresses.length === 0 ? (
-            <p className="mb-4 text-body">{t.noAddresses}</p>
-          ) : (
+          <Title n={n.address}>{t.address}</Title>
+          {addresses.length > 0 && (
             <div role="radiogroup" aria-label={t.address} className="space-y-3">
               {addresses.map((a) => (
                 <label key={a.id} className={`flex cursor-pointer items-start gap-3 rounded-lg border p-4 ${addressId === a.id ? "border-primary-dark bg-product-bg/50" : "border-[#dce6f1]"}`}>
-                  <input type="radio" name="address" value={a.id} checked={addressId === a.id} onChange={() => setAddressId(a.id)} className="mt-1 accent-primary-dark" />
+                  <input type="radio" name="address" value={a.id} checked={addressId === a.id} onChange={() => setAddressSel(a.id)} className="mt-1 accent-primary-dark" />
                   <span className="text-sm text-secondary">
                     {a.label && <strong className="block font-raleway text-base text-heading-deep">{a.label}</strong>}
                     {a.recipient} · {a.phone}
@@ -139,15 +278,44 @@ export default function CheckoutView({ lang, labels: t, user, addresses, zones, 
                   </span>
                 </label>
               ))}
+              <label className={`flex cursor-pointer items-center gap-3 rounded-lg border p-4 ${addressId === NEW ? "border-primary-dark bg-product-bg/50" : "border-[#dce6f1]"}`}>
+                <input type="radio" name="address" value={NEW} checked={addressId === NEW} onChange={() => setAddressSel(NEW)} className="accent-primary-dark" />
+                <span className="text-sm font-semibold text-ink">{t.newAddress}</span>
+              </label>
             </div>
           )}
-          <Link href={hrefs.addAddress} className={`${btnGhost} mt-4`}>
-            + {t.addAddress}
-          </Link>
+          {addressId === NEW && (
+            <div className={`grid gap-4 sm:grid-cols-2 ${addresses.length > 0 ? "mt-4" : ""}`}>
+              <Field label={f.recipient} htmlFor="ck-recipient" error={ed.recipient}>
+                <Input id="ck-recipient" value={newAddr.recipient} onChange={setD("recipient")} autoComplete="name" error={ed.recipient} />
+              </Field>
+              <Field label={f.phone} htmlFor="ck-addr-phone" hint={f.phoneHint} error={ed.phone}>
+                <Input id="ck-addr-phone" type="tel" value={newAddr.phone} onChange={setD("phone")} autoComplete="tel" error={ed.phone} />
+              </Field>
+              <Field label={f.state} htmlFor="ck-state" error={ed.state}>
+                <Input id="ck-state" value={newAddr.state} onChange={setD("state")} autoComplete="address-level1" error={ed.state} />
+              </Field>
+              <Field label={f.city} htmlFor="ck-city" error={ed.city}>
+                <Input id="ck-city" value={newAddr.city} onChange={setD("city")} autoComplete="address-level2" error={ed.city} />
+              </Field>
+              <div className="sm:col-span-2">
+                <Field label={f.line} htmlFor="ck-line" error={ed.line}>
+                  <Input id="ck-line" value={newAddr.line} onChange={setD("line")} autoComplete="street-address" error={ed.line} />
+                </Field>
+              </div>
+              <Field label={f.reference} htmlFor="ck-reference">
+                <Input id="ck-reference" value={newAddr.reference} onChange={setD("reference")} />
+              </Field>
+              <Field label={f.label} htmlFor="ck-label" hint={f.labelHint}>
+                <Input id="ck-label" maxLength={60} value={newAddr.label} onChange={setD("label")} />
+              </Field>
+            </div>
+          )}
+          {addresses.length === 0 && !guest && <p className="sr-only">{t.noAddresses}</p>}
         </section>
 
         <section className={card}>
-          <h2 className="mb-4 font-raleway text-xl font-bold text-heading-dark">{t.zone}</h2>
+          <Title n={n.zone}>{t.zone}</Title>
           {zones.length === 0 ? (
             <p className="text-body">{t.noZones}</p>
           ) : (
@@ -166,29 +334,77 @@ export default function CheckoutView({ lang, labels: t, user, addresses, zones, 
         </section>
 
         <section className={card}>
-          <h2 className="mb-1 font-raleway text-xl font-bold text-heading-dark">{t.payment}</h2>
-          <p className="mb-4 text-sm text-body">{t.paymentIntro}</p>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Field label={t.bank} htmlFor="pay-bank">
-              <select id="pay-bank" value={bank} onChange={(e) => setBank(e.target.value)} className="w-full rounded-md border border-[#d7dee6] bg-white px-4 py-[11px] text-base text-secondary outline-none focus:border-primary-dark focus:ring-2 focus:ring-primary-dark/15">
-                <option value="">{t.bankPlaceholder}</option>
-                {banks.map((b) => (
-                  <option key={b.code} value={b.code}>
-                    {b.code} · {b.name}
-                  </option>
+          <Title n={n.payment}>{t.payment}</Title>
+          {available.length === 0 ? (
+            <p className="text-body">{t.disabledNotice}</p>
+          ) : (
+            <>
+              <p className="mb-4 text-sm text-body">{t.paymentIntro}</p>
+              <div role="radiogroup" aria-label={t.payment} className="space-y-3">
+                {available.map((m) => (
+                  <label key={m} className={`flex cursor-pointer items-start gap-3 rounded-lg border p-4 ${payMethod === m ? "border-primary-dark bg-product-bg/50" : "border-[#dce6f1]"}`}>
+                    <input type="radio" name="method" value={m} checked={payMethod === m} onChange={() => setMethod(m)} className="mt-1 accent-primary-dark" />
+                    <span>
+                      <span className="block font-semibold text-ink">{t.methods[m].title}</span>
+                      <span className="block text-sm text-secondary">{t.methods[m].desc}</span>
+                    </span>
+                  </label>
                 ))}
-              </select>
-            </Field>
-            <Field label={t.id} htmlFor="pay-id">
-              <Input id="pay-id" value={payId} onChange={(e) => setPayId(e.target.value)} placeholder="V12345678" autoComplete="off" />
-            </Field>
-            <Field label={t.phone} htmlFor="pay-phone">
-              <Input id="pay-phone" type="tel" value={payPhone} onChange={(e) => setPayPhone(e.target.value)} placeholder="0412 123 4567" autoComplete="tel" />
-            </Field>
-            <Field label={t.token} htmlFor="pay-token" hint={t.tokenHint}>
-              <Input id="pay-token" inputMode="numeric" value={payToken} onChange={(e) => setPayToken(e.target.value.replace(/\D/g, "").slice(0, 12))} autoComplete="one-time-code" />
-            </Field>
-          </div>
+              </div>
+
+              <div className="mt-5">
+                {payMethod === "c2p" && (
+                  <>
+                    <p className="mb-4 text-sm text-body">{t.c2pIntro}</p>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <Field label={t.bank} htmlFor="pay-bank">
+                        <BankSelect id="pay-bank" value={c2pBank} onChange={setC2pBank} banks={banks} placeholder={t.bankPlaceholder} invalid={!!payErr && !/^\d{4}$/.test(c2pBank)} />
+                      </Field>
+                      <Field label={t.id} htmlFor="pay-id">
+                        <Input id="pay-id" value={payId} onChange={(e) => setPayIdIn(e.target.value)} placeholder="V12345678" autoComplete="off" error={payErr && !/^[VEJGP]\d{5,10}$/.test(normCedula(payId)) ? payErr : undefined} />
+                      </Field>
+                      <Field label={t.phone} htmlFor="pay-phone">
+                        <Input id="pay-phone" type="tel" value={payPhone} onChange={(e) => setPayPhoneIn(e.target.value)} placeholder="0412 123 4567" autoComplete="tel" error={payErr && !normalizePhone(payPhone) ? payErr : undefined} />
+                      </Field>
+                      <Field label={t.token} htmlFor="pay-token" hint={t.tokenHint}>
+                        <Input id="pay-token" inputMode="numeric" value={payToken} onChange={(e) => setPayToken(e.target.value.replace(/\D/g, "").slice(0, 12))} autoComplete="one-time-code" error={payErr && !/^\d{8,12}$/.test(payToken) ? payErr : undefined} />
+                      </Field>
+                    </div>
+                  </>
+                )}
+
+                {payMethod === "transfer" && (
+                  <>
+                    <p className="mb-3 text-sm text-body">{t.transferIntro}</p>
+                    <Instructions details={methods.transfer ?? ""} amountLabel={t.transferAmount} amount={quote ? formatBs(quote.total_bs, lang) : "…"} copy={t.copy} copied={t.copied} />
+                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                      <Field label={t.originBank} htmlFor="tr-bank">
+                        <BankSelect id="tr-bank" value={tBank} onChange={setTBank} banks={banks} placeholder={t.bankPlaceholder} invalid={!!payErr && !/^\d{4}$/.test(tBank)} />
+                      </Field>
+                      <Field label={t.reference} htmlFor="tr-ref" hint={t.referenceHintTransfer}>
+                        <Input id="tr-ref" inputMode="numeric" value={tRef} onChange={(e) => setTRef(e.target.value.replace(/\D/g, "").slice(0, 20))} autoComplete="off" error={payErr && !/^\d{6,20}$/.test(tRef) ? payErr : undefined} />
+                      </Field>
+                    </div>
+                  </>
+                )}
+
+                {payMethod === "zelle" && (
+                  <>
+                    <p className="mb-3 text-sm text-body">{t.zelleIntro}</p>
+                    <Instructions details={methods.zelle ?? ""} amountLabel={t.zelleAmount} amount={quote ? formatUsd(quote.total_usd, lang) : "…"} copy={t.copy} copied={t.copied} />
+                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                      <Field label={t.payerName} htmlFor="ze-name">
+                        <Input id="ze-name" value={zName} onChange={(e) => setZNameIn(e.target.value)} autoComplete="name" error={payErr && zName.trim().length < 2 ? payErr : undefined} />
+                      </Field>
+                      <Field label={t.reference} htmlFor="ze-ref" hint={t.referenceHintZelle}>
+                        <Input id="ze-ref" value={zRef} onChange={(e) => setZRef(e.target.value.slice(0, 40))} autoComplete="off" error={payErr && zRef.trim().length < 4 ? payErr : undefined} />
+                      </Field>
+                    </div>
+                  </>
+                )}
+              </div>
+            </>
+          )}
         </section>
       </div>
 
@@ -219,7 +435,7 @@ export default function CheckoutView({ lang, labels: t, user, addresses, zones, 
           </>
         ) : (
           <p className="text-sm text-body" aria-live="polite">
-            {current?.error ? t.errors[current.error] : t.quoting}
+            {current?.error ? t.errors[current.error] : zones.length === 0 ? t.noZones : t.quoting}
           </p>
         )}
 
@@ -246,16 +462,70 @@ export default function CheckoutView({ lang, labels: t, user, addresses, zones, 
         </div>
 
         <div className="mt-5 space-y-3">
-          {payError && <Flash message={payError} />}
-          <button type="button" onClick={onPay} disabled={!canPay} className={`${btnPrimary} w-full ${!canPay ? "!cursor-not-allowed !bg-[#b9c4cf] opacity-100" : ""}`}>
-            {paying ? t.paying : quote ? t.pay.replace("{amount}", formatBs(quote.total_bs, lang)) : t.pay.replace("{amount}", "")}
+          {payError && !(payError === t.errors.fields && !hasErrors) && <Flash message={payError} />}
+          <button type="button" onClick={onSubmit} disabled={!canSubmit} className={`${btnPrimary} w-full ${!canSubmit ? "!cursor-not-allowed !bg-[#b9c4cf] opacity-100" : ""}`}>
+            {paying
+              ? payMethod === "c2p" ? t.paying : t.confirming
+              : payMethod === "c2p" ? t.pay.replace("{amount}", quote ? formatBs(quote.total_bs, lang) : "") : t.confirmOrder}
           </button>
-          {!paymentsEnabled && <p className="text-center text-xs text-body">{t.disabledNotice}</p>}
+          {payMethod && payMethod !== "c2p" && <p className="text-center text-xs text-body">{t.manualNotice}</p>}
+          {available.length === 0 && <p className="text-center text-xs text-body">{t.disabledNotice}</p>}
           <Link href={hrefs.cart} className="block text-center text-sm font-semibold text-link-blue hover:underline">
             {t.back}
           </Link>
         </div>
       </aside>
+    </div>
+  );
+}
+
+function Title({ n, children }: { n: number; children: ReactNode }) {
+  return (
+    <h2 className="mb-4 flex items-center gap-3 font-raleway text-xl font-bold text-heading-dark">
+      <span aria-hidden className="grid size-7 shrink-0 place-items-center rounded-full bg-primary-dark text-sm font-bold text-white">
+        {n}
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function BankSelect({ id, value, onChange, banks, placeholder, invalid }: { id: string; value: string; onChange: (v: string) => void; banks: { code: string; name: string }[]; placeholder: string; invalid?: boolean }) {
+  return (
+    <select id={id} value={value} onChange={(e) => onChange(e.target.value)} aria-invalid={invalid || undefined} className={selectClass}>
+      <option value="">{placeholder}</option>
+      {banks.map((b) => (
+        <option key={b.code} value={b.code}>
+          {b.code} · {b.name}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+/** Datos de la cuenta donde pagar (los define el admin) y el monto exacto a pagar. */
+function Instructions({ details, amountLabel, amount, copy, copied }: { details: string; amountLabel: string; amount: string; copy: string; copied: string }) {
+  const [done, setDone] = useState(false);
+  const onCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(details);
+      setDone(true);
+      setTimeout(() => setDone(false), 2000);
+    } catch {
+      /* sin portapapeles: el texto sigue visible para copiarlo a mano */
+    }
+  };
+  return (
+    <div className="rounded-lg border border-[#dce6f1] bg-product-bg/50 p-4">
+      <pre className="whitespace-pre-wrap break-words font-manrope text-sm text-ink">{details}</pre>
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-3 border-t border-[#dce6f1] pt-3">
+        <p className="text-sm text-body">
+          {amountLabel}: <strong className="font-raleway text-base text-heading-dark">{amount}</strong>
+        </p>
+        <button type="button" onClick={onCopy} className={btnGhost}>
+          {done ? copied : copy}
+        </button>
+      </div>
     </div>
   );
 }

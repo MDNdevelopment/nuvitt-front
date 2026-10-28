@@ -97,3 +97,20 @@ export function useLiveCatalog() {
   }, []);
   return catalog;
 }
+
+// --- panel lateral del carrito (se abre al agregar un producto) ---
+let drawerOpen = false;
+const drawerListeners = new Set<() => void>();
+const setDrawer = (open: boolean) => {
+  drawerOpen = open;
+  drawerListeners.forEach((l) => l());
+};
+const subscribeDrawer = (cb: () => void) => {
+  drawerListeners.add(cb);
+  return () => void drawerListeners.delete(cb);
+};
+
+export const openDrawer = () => setDrawer(true);
+export const closeDrawer = () => setDrawer(false);
+export const useDrawerOpen = () =>
+  useSyncExternalStore(subscribeDrawer, () => drawerOpen, () => false);

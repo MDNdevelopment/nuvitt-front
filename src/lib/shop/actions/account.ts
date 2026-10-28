@@ -9,8 +9,10 @@ import { hasLocale, localePath, type Locale } from "@/lib/i18n";
 import { pb, PBError } from "@/lib/pb";
 import { SHOP_ENABLED } from "@/lib/site";
 import { safeNext } from "../next-url";
-import { clientIp, CUSTOMER_COOKIE, requireCustomer, setCustomerCookie } from "../session";
+import { createCustomer, signIn } from "../auth";
+import { clientIp, CUSTOMER_COOKIE, requireCustomer } from "../session";
 import type { AccountFormState, Customer } from "../types";
+import { checkAccount, checkAddress, checkProfile, normCedula, type ValidationMessages } from "../validate";
 
 type Errors = Record<string, string>;
 
@@ -20,28 +22,13 @@ async function ctx(lang: string) {
   return { lang: lang as Locale, e: dict.account.errors, m: dict.account.messages };
 }
 
-const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CEDULA = /^[VEJGP]\d{5,10}$/;
-const normCedula = (s: string) => s.toUpperCase().replace(/[\s.-]/g, "");
-
 /** Valida nombre, teléfono y cédula (comunes a registro y perfil). */
-function profileFields(fd: FormData, e: Record<string, string>, errors: Errors) {
+function profileFields(fd: FormData, e: ValidationMessages, errors: Errors) {
   const name = str(fd, "name");
   const phone = normalizePhone(str(fd, "phone"));
   const cedula = normCedula(str(fd, "cedula"));
-  if (name.length < 2) errors.name = e.required;
-  if (!phone) errors.phone = e.phone;
-  if (!CEDULA.test(cedula)) errors.cedula = e.cedula;
+  Object.assign(errors, checkProfile({ name, phone: str(fd, "phone"), cedula }, e));
   return { name, phone, cedula };
-}
-
-async function signIn(email: string, password: string) {
-  const res = await pb<{ token: string }>("/api/collections/users/auth-with-password", {
-    method: "POST",
-    json: { identity: email, password },
-    ip: await clientIp(),
-  });
-  await setCustomerCookie(res.token);
 }
 
 export async function loginAction(lang: string, _prev: AccountFormState, fd: FormData): Promise<AccountFormState> {
@@ -60,14 +47,11 @@ export async function loginAction(lang: string, _prev: AccountFormState, fd: For
 
 export async function registerAction(lang: string, _prev: AccountFormState, fd: FormData): Promise<AccountFormState> {
   const { lang: l, e } = await ctx(lang);
-  const errors: Errors = {};
   const email = str(fd, "email");
   const password = String(fd.get("password") ?? "");
   const confirm = String(fd.get("passwordConfirm") ?? "");
-  const { name, phone, cedula } = profileFields(fd, e, errors);
-  if (!EMAIL.test(email)) errors.email = e.email;
-  if (password.length < 8) errors.password = e.passwordShort;
-  else if (password !== confirm) errors.passwordConfirm = e.passwordMismatch;
+  const { name, phone, cedula } = profileFields(fd, e, {});
+  const errors = checkAccount({ name, email, phone: str(fd, "phone"), cedula, password, passwordConfirm: confirm }, e);
   // Las claves nunca se devuelven al formulario.
   const values = () => {
     const v = valuesOf(fd);
@@ -77,24 +61,11 @@ export async function registerAction(lang: string, _prev: AccountFormState, fd: 
   };
   if (Object.keys(errors).length) return { message: e.fixFields, errors, values: values() };
 
-  try {
-    await pb("/api/collections/users/records", {
-      method: "POST",
-      json: { email, password, passwordConfirm: confirm, name, phone, cedula, lang: l },
-      ip: await clientIp(),
-    });
-  } catch (err) {
-    if (err instanceof PBError) {
-      if (err.fields.email) return { message: e.fixFields, errors: { email: e.emailTaken }, values: values() };
-      if (err.status < 500) return { message: e.fixFields, errors: Object.fromEntries(Object.keys(err.fields).map((k) => [k, e.required])), values: values() };
-    }
+  const res = await createCustomer({ email, password, passwordConfirm: confirm, name, phone, cedula, lang: l });
+  if (!res.ok) {
+    if (res.reason === "emailTaken") return { message: e.fixFields, errors: { email: e.emailTaken }, values: values() };
+    if (res.reason === "invalid") return { message: e.fixFields, errors: Object.fromEntries((res.fields ?? []).map((k) => [k, e.required])), values: values() };
     return { message: e.generic, values: values() };
-  }
-
-  try {
-    await signIn(email, password);
-  } catch {
-    return { message: e.generic };
   }
   redirect(safeNext(l, fd.get("next")));
 }
@@ -123,17 +94,12 @@ export async function updateProfileAction(lang: string, _prev: AccountFormState,
 export async function saveAddressAction(lang: string, id: string | undefined, _prev: AccountFormState, fd: FormData): Promise<AccountFormState> {
   const { lang: l, e } = await ctx(lang);
   const { token, user } = await requireCustomer(l);
-  const errors: Errors = {};
   const recipient = str(fd, "recipient");
   const phone = normalizePhone(str(fd, "phone"));
   const state = str(fd, "state");
   const city = str(fd, "city");
   const line = str(fd, "line");
-  if (recipient.length < 2) errors.recipient = e.required;
-  if (!phone) errors.phone = e.phone;
-  if (!state) errors.state = e.required;
-  if (!city) errors.city = e.required;
-  if (line.length < 5) errors.line = e.required;
+  const errors = checkAddress({ label: "", recipient, phone: str(fd, "phone"), state, city, line, reference: "" }, e);
   if (Object.keys(errors).length) return { message: e.fixFields, errors, values: valuesOf(fd) };
 
   const body = { label: str(fd, "label"), recipient, phone, state, city, line, reference: str(fd, "reference") };

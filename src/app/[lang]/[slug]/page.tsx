@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ClockIcon } from "@/components/icons";
 import NutritionTable from "@/components/NutritionTable";
 import ProductGallery from "@/components/ProductGallery";
+import Breadcrumb from "@/components/Breadcrumb";
 import { DashesEyebrow } from "@/components/DashesEyebrow";
+import ProductCard from "@/components/ProductCard";
 import AddToCart from "@/components/shop/AddToCart";
+import StickyBuyBar from "@/components/shop/StickyBuyBar";
+import TrustBadges from "@/components/shop/TrustBadges";
 import { productThemeStyle } from "@/data/product-themes";
 import { getDictionary } from "@/lib/dictionaries";
 import { hasLocale, localePath, locales } from "@/lib/i18n";
@@ -79,15 +82,37 @@ export default async function ProductPage({ params }: PageProps<"/[lang]/[slug]"
     }),
   };
 
+  const labels = buyLabels(dict);
+  const shopOn = catalog.enabled && !!offer;
+  const tint = product.theme?.tint ?? "#d8e9f3";
+  const crumbs = [
+    { label: dict.common.breadcrumbHome, href: localePath(lang, "/") },
+    { label: dict.nav.products, href: localePath(lang, "/productos/") },
+    { label: p.name },
+  ];
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.label,
+      item: `${SITE_URL}${c.href ?? localePath(lang, `/${slug}/`)}`,
+    })),
+  };
+
   return (
     <div style={productThemeStyle(product.theme)}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJson(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJson(breadcrumbLd) }} />
+      <Breadcrumb items={crumbs} label={dict.common.breadcrumbLabel} />
 
       {/* Hero */}
-      <section className="py-10 min-[1025px]:pb-[84px] min-[1025px]:pt-[105px]">
+      <section className="py-8 min-[1025px]:pb-[84px] min-[1025px]:pt-[40px]">
         <div className="container-nv grid items-center gap-10 min-[1025px]:grid-cols-[1fr_540px] min-[1025px]:gap-[60px]">
           <ProductGallery
             dotLabel={dict.product.imageNav}
+            tint={tint}
             images={[
               { ...product.heroImage, alt: dict.product.bottleAlt.replace("{name}", p.name) },
               ...(label ? [{ ...label, alt: dict.product.labelAlt.replace("{name}", p.name) }] : []),
@@ -132,29 +157,56 @@ export default async function ProductPage({ params }: PageProps<"/[lang]/[slug]"
               </div>
             )}
 
-            {catalog.enabled && offer && (
-              <AddToCart
-                lang={lang}
-                slug={slug}
-                labels={buyLabels(dict)}
-                cartHref={localePath(lang, "/carrito/")}
-                initial={{ id: offer.id, usd: offer.price_usd, stock: offer.stock, rate: catalog.rate }}
-              />
+            {shopOn && offer && (
+              <>
+                <AddToCart
+                  lang={lang}
+                  slug={slug}
+                  labels={labels}
+                  initial={{ id: offer.id, usd: offer.price_usd, stock: offer.stock, rate: catalog.rate }}
+                />
+                <div className="mt-5">
+                  <TrustBadges labels={dict.shop.trust} />
+                </div>
+                <StickyBuyBar
+                  lang={lang}
+                  slug={slug}
+                  name={p.name}
+                  image={product.image}
+                  tint={tint}
+                  initial={{ id: offer.id, usd: offer.price_usd, stock: offer.stock }}
+                  labels={labels}
+                  targetId="buy-box"
+                />
+              </>
             )}
 
-            <div className="mt-6 flex flex-wrap gap-5">
-              <Link
-                href={localePath(lang, "/contacto/")}
-                className="rounded bg-link-blue px-7 py-[18px] font-manrope text-base font-semibold leading-4 text-white transition-colors hover:bg-primary-dark"
-              >
-                {dict.common.contactUs}
-              </Link>
-              <Link
-                href={localePath(lang, "/productos/")}
-                className="rounded border border-primary-light2 px-7 py-[18px] font-manrope text-base font-semibold leading-4 text-link-blue transition-colors hover:bg-product-bg"
-              >
-                {dict.common.viewMoreProducts}
-              </Link>
+            <div className={`mt-6 flex flex-wrap items-center ${shopOn ? "gap-x-6 gap-y-3" : "gap-5"}`}>
+              {shopOn ? (
+                <>
+                  <Link href={localePath(lang, "/contacto/")} className="font-manrope text-[15px] font-semibold text-link-blue underline-offset-4 hover:underline">
+                    {dict.common.contactUs}
+                  </Link>
+                  <Link href={localePath(lang, "/productos/")} className="font-manrope text-[15px] font-semibold text-link-blue underline-offset-4 hover:underline">
+                    {dict.common.viewMoreProducts}
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    href={localePath(lang, "/contacto/")}
+                    className="rounded bg-link-blue px-7 py-[18px] font-manrope text-base font-semibold leading-4 text-white transition-colors hover:bg-primary-dark"
+                  >
+                    {dict.common.contactUs}
+                  </Link>
+                  <Link
+                    href={localePath(lang, "/productos/")}
+                    className="rounded border border-primary-light2 px-7 py-[18px] font-manrope text-base font-semibold leading-4 text-link-blue transition-colors hover:bg-product-bg"
+                  >
+                    {dict.common.viewMoreProducts}
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -227,29 +279,18 @@ export default async function ProductPage({ params }: PageProps<"/[lang]/[slug]"
                 {p.relatedHeading}
               </h2>
             )}
-            <ul className="mt-10 grid gap-[30px] px-[10px] md:grid-cols-3">
+            <ul className="mt-6 grid gap-x-6 gap-y-[96px] md:grid-cols-3">
               {related.map((r) => {
-                const href = localePath(lang, `/${r.slug}/`);
+                const o = catalog.enabled ? catalog.items[r.slug] : undefined;
                 return (
-                  <li
-                    key={r.slug}
-                    className="flex items-center gap-5 rounded-[20px] border border-[#d0d4d8] bg-white p-[18px] shadow-[0_10px_25px_rgba(30,60,90,0.08)]"
-                  >
-                    <Link href={href} tabIndex={-1} aria-hidden="true" className="shrink-0">
-                      <Image {...r.product.image} alt="" sizes="80px" className="h-[118px] w-auto" />
-                    </Link>
-                    <div>
-                      <h3 className="font-manrope text-[19px] font-extrabold leading-[19px] text-[#0f5272]">
-                        <Link href={href}>{r.product[lang].name}</Link>
-                      </h3>
-                      <p className="mt-3 font-manrope text-sm font-medium leading-5 text-body">{r.desc}</p>
-                      <Link
-                        href={href}
-                        className="mt-3 inline-block rounded-full bg-primary-dark px-3 py-[7px] font-manrope text-xs font-medium leading-3 text-white transition-colors hover:bg-primary"
-                      >
-                        {dict.common.viewProduct}
-                      </Link>
-                    </div>
+                  <li key={r.slug}>
+                    <ProductCard
+                      product={r.product}
+                      lang={lang}
+                      viewLabel={dict.common.viewProduct}
+                      offer={o && { id: o.id, usd: o.price_usd, stock: o.stock, rate: catalog.rate }}
+                      labels={labels}
+                    />
                   </li>
                 );
               })}
